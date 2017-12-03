@@ -40,14 +40,14 @@
 			<li class="dropdown">
 				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="module-fixtures.html">fixtures</a></li><li><a href="module-index.html">index</a></li><li><a href="module-video.html">video</a></li>
+					<li><a href="module-fixtures.html">fixtures</a></li><li><a href="module-index.html">index</a></li>
 				</ul>
 			</li>
 			
 			<li class="dropdown">
 				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="module-video-VideoRecorder.html">video~VideoRecorder</a></li>
+					<li><a href="VideoRecorder.html">VideoRecorder</a></li>
 				</ul>
 			</li>
 			
@@ -103,6 +103,7 @@
  * Steps for video recording.
  *
  * @mixin VideoSteps
+ * @prop {VideoRecorder} video - Video recorder instance.
  */
 
 var fs = require("fs");
@@ -147,17 +148,17 @@ var VideoSteps = {
         var fileName = U.defVal(opts.name, uuid()) + ".avi";
         var check = U.defVal(opts.check, true);
 
-        if (!this._video) this._video = new VideoRecorder();
+        this.video = this.video || new VideoRecorder();
 
         var videoOpts = {};
         var screen = await resolution.get();
 
-        if (await this._webdriver.session()) {
+        if (this.webdriver &amp;&amp; await this.webdriver.session()) {
 
             _.assign(videoOpts,
-                     (await this._webdriver.windowHandlePosition()).value);
+                     (await this.webdriver.windowHandlePosition()).value);
             _.assign(videoOpts,
-                     (await this._webdriver.windowHandleSize()).value);
+                     (await this.webdriver.windowHandleSize()).value);
 
             if (videoOpts.x &lt; 0) videoOpts.x = 0;
             if (videoOpts.y &lt; 0) videoOpts.y = 0;
@@ -181,12 +182,12 @@ var VideoSteps = {
                      path.resolve(CONF.reportsDir, testName, "videos")),
             fileName);
 
-        this._video.configure(videoOpts);
-        this._video.start();
+        this.video.configure(videoOpts);
+        this.video.start();
         await this.pause(1, "it needs a time to start recording");
 
         if (check) {
-            expect(this._video.isRunning,
+            expect(this.video.isRunning,
                    "Video recording wasn't launched")
                 .to.be.true;
         };
@@ -219,17 +220,17 @@ var VideoSteps = {
         var check = U.defVal(opts.check, true);
 
         await this.pause(1, "it needs a time to gather latest frames");
-        await this._video.stop();
+        await this.video.stop();
 
         if (check) {
-            expect(this._video.isRunning,
+            expect(this.video.isRunning,
                    "Video recording was still running")
                 .to.be.false;
         };
 
         this._isVideoStarted = false;
 
-        return this._video.filePath;
+        return this.video.filePath;
     },
     /**
      * Step to get path to recorded video.
@@ -242,22 +243,22 @@ var VideoSteps = {
      * @return {string} - Path to recorded video.
      */
     getVideo: function (opts) {
-        expect(this._video,
+        expect(this.video,
                "Video recorder isn't initialized").to.exist;
 
         opts = U.defVal(opts, {});
         var check = U.defVal(opts.check, true);
 
         if (check) {
-            expect(this._video.isRunning,
+            expect(this.video.isRunning,
                    "Can't get recorded video file path, " +
                    "because video is still recording").to.be.false;
-            expect(this._video.filePath,
+            expect(this.video.filePath,
                    "Can't get recorded video file path, " +
                    "because it's empty").to.not.be.empty;
         };
 
-        return this._video.filePath;
+        return this.video.filePath;
     },
     /**
      * Step to remove recorded video.
@@ -271,7 +272,7 @@ var VideoSteps = {
      */
     removeVideo: function (opts) {
 
-        if (!this._video.filePath || !fs.existsSync(this._video.filePath)) {
+        if (!this.video.filePath || !fs.existsSync(this.video.filePath)) {
             LOG.warn("Video file doesn't exist");
             return false;
         };
@@ -279,11 +280,11 @@ var VideoSteps = {
         opts = U.defVal(opts, {});
         var check = U.defVal(opts.check, true);
 
-        fs.unlinkSync(this._video.filePath);
+        fs.unlinkSync(this.video.filePath);
 
         if (check) {
-            expect(fs.existsSync(this._video.filePath),
-                   `Video file '${this._video.filePath}' wasn't removed`)
+            expect(fs.existsSync(this.video.filePath),
+                   `Video file '${this.video.filePath}' wasn't removed`)
                 .to.be.false;
         };
         return true;
@@ -335,7 +336,7 @@ module.exports = VideoSteps;
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
 	
-		on 2017-12-02T22:26:57+02:00
+		on 2017-12-03T22:30:27+02:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>
