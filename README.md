@@ -2,6 +2,14 @@
 
 Provides steps for [GlaceJS](https://glacejs.github.io/glace-core/) framework to capture video of executed tests.
 
+## Features
+
+- Video capture and video management.
+
+## Requirements
+
+- Installed `ffmpeg` or `avconv` on **unix** systems (on **windows** it will be installed with plugin).
+
 ## How to install
 
 ```
