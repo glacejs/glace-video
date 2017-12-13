@@ -6,33 +6,27 @@ scope("fixtures", () => {
 
     test("fxVideo", () => {
         var calls,
-            oBefore,
-            oAfter,
-            oStartVideo,
-            oStopVideo,
-            oRemoveVideo;
+            oGlobal,
+            oSS;
+
+        before(() => {
+            oGlobal = global;
+            oSS = SS;
+        });
+
+        after(() => {
+            global = oGlobal;
+            SS = oSS;
+            CONF.video.save = false;
+        });
 
         beforeChunk(() => {
-            oBefore = global.before;
-            oAfter = global.after;
-            oStartVideo = SS.startVideo;
-            oStopVideo = SS.stopVideo;
-            oRemoveVideo = SS.removeVideo;
-
             calls = Promise.resolve()
             global.before = cb => calls = calls.then(cb);
             global.after = cb => calls = calls.then(cb);
 
             SS.stopVideo = sinon.spy();
             SS.removeVideo = sinon.spy();
-        });
-
-        afterChunk(() => {
-            global.before = oBefore;
-            global.after = oAfter;
-            SS.startVideo = oStartVideo;
-            SS.stopVideo = oStopVideo;
-            SS.removeVideo = oRemoveVideo;
         });
 
         chunk("exists globally", () => {
