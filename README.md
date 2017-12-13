@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/glacejs/glace-video.svg?branch=master)](https://travis-ci.org/glacejs/glace-video)
+
 ## GlaceJS Video plugin
 
 Provides steps for [GlaceJS](https://glacejs.github.io/glace-core/) framework to capture video of executed tests.
