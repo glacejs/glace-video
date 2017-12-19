@@ -20,7 +20,7 @@ gulp.task("rm-docs", () => {
 gulp.task("test-unit", () => {
 
     var res = spawn.sync(
-        "./node_modules/glace-core/bin/glace",
+        "./tests/run",
         [
             "tests/unit",
         ],
