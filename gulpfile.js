@@ -34,3 +34,21 @@ gulp.task("test-unit", () => {
         process.exit(res.status);
     };
 });
+
+gulp.task("test-e2e", () => {
+
+    var res = spawn.sync(
+        "./tests/run",
+        [
+            "tests/e2e",
+        ],
+        { stdio: "inherit" });
+
+    if (res.error) {
+        console.log(res.error);
+        process.exit(1);
+    };
+    if (res.status) {
+        process.exit(res.status);
+    };
+});
