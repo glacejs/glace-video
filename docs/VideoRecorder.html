@@ -59,6 +59,13 @@
 			</li>
 			
 			<li class="dropdown">
+				<a href="tutorials.list.html" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="tutorial-release-notes.html">Release Notes</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
 				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
 					<li><a href="global.html#fxVideo">fxVideo</a></li><li><a href="global.html#pluginHelp">pluginHelp</a></li>
@@ -114,7 +121,7 @@
         
 <hr>
 <dt>
-    <h4 class="name" id="VideoRecorder"><span class="type-signature"></span>new VideoRecorder()</h4>
+    <h4 class="name" id="VideoRecorder"><span class="type-signature"></span>new VideoRecorder( [opts])</h4>
     
     
 </dt>
@@ -131,6 +138,198 @@
     
 
     
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>opts</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Options.</p>
+                <h6 class="method-params-label method-subparams-label">Properties</h6>
+                
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>_process</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Injected <code>process</code> module.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>_which</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Injected <code>which</code> module.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>_spawn</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Injected <code>spawn</code> module.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
     
 
     
@@ -433,6 +632,44 @@
 
         <tr>
             
+                <td class="name"><code>path</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>video file path</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
                 <td class="name"><code>fps</code></td>
             
 
@@ -678,7 +915,7 @@
 		<ul class="dummy">
 			<li>
 				<a href="video.js.html">video.js</a>,
-				 <a href="video.js.html#sunlight-1-line-37">line 37</a>
+				 <a href="video.js.html#sunlight-1-line-48">line 48</a>
 			</li>
 		</ul>
 	</dd>
@@ -766,7 +1003,7 @@
 		<ul class="dummy">
 			<li>
 				<a href="video.js.html">video.js</a>,
-				 <a href="video.js.html#sunlight-1-line-92">line 92</a>
+				 <a href="video.js.html#sunlight-1-line-103">line 103</a>
 			</li>
 		</ul>
 	</dd>
@@ -908,7 +1145,7 @@
 		<ul class="dummy">
 			<li>
 				<a href="video.js.html">video.js</a>,
-				 <a href="video.js.html#sunlight-1-line-107">line 107</a>
+				 <a href="video.js.html#sunlight-1-line-118">line 118</a>
 			</li>
 		</ul>
 	</dd>
@@ -1019,7 +1256,7 @@
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
 	
-		on 2017-12-13T21:16:58+02:00
+		on 2017-12-31T16:42:54+02:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>

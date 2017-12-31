@@ -59,6 +59,13 @@
 			</li>
 			
 			<li class="dropdown">
+				<a href="tutorials.list.html" class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="tutorial-release-notes.html">Release Notes</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
 				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
 					<li><a href="global.html#fxVideo">fxVideo</a></li><li><a href="global.html#pluginHelp">pluginHelp</a></li>
@@ -110,6 +117,7 @@ var fs = require("fs");
 var path = require("path");
 
 var _ = require("lodash");
+var expect = require("chai").expect;
 var resolution = require("screen-resolution");
 var uuid = require("uuid/v4");
 var U = require("glace-utils");
@@ -119,6 +127,10 @@ require("./fixtures");
 var VideoRecorder = require("./video");
 
 var VideoSteps = {
+    /* modules */
+    __fs: fs,
+    __resolution: resolution,
+    __VideoRecorder: VideoRecorder,
     /**
      * Step to start video recording. Step recall will be skipped if video
      *  recording wasn't stopped before.
@@ -145,42 +157,12 @@ var VideoSteps = {
         };
 
         opts = U.defVal(opts, {});
-        var fileName = U.defVal(opts.name, uuid()) + ".avi";
         var check = U.defVal(opts.check, true);
 
-        this.video = this.video || new VideoRecorder();
+        this.video = this.video || new this.__VideoRecorder();
 
-        var videoOpts = {};
-        var screen = await resolution.get();
-
-        if (this.webdriver &amp;&amp; await this.webdriver.session()) {
-
-            _.assign(videoOpts,
-                     (await this.webdriver.windowHandlePosition()).value);
-            _.assign(videoOpts,
-                     (await this.webdriver.windowHandleSize()).value);
-
-            if (videoOpts.x &lt; 0) videoOpts.x = 0;
-            if (videoOpts.y &lt; 0) videoOpts.y = 0;
-            if (videoOpts.x + videoOpts.width > screen.width) {
-                videoOpts.width = screen.width - videoOpts.x;
-            };
-            if (videoOpts.y + videoOpts.height > screen.height) {
-                videoOpts.height = screen.height - videoOpts.y;
-            };
-
-        } else {
-            videoOpts = { x: 0,
-                          y: 0,
-                          width: screen.width,
-                          height: screen.height };
-        };
-
-        var testName = CONF.curTestCase ? _.kebabCase(CONF.curTestCase.name) : "";
-        videoOpts.path = U.mkpath(
-            U.defVal(opts.path,
-                     path.resolve(CONF.reportsDir, testName, "videos")),
-            fileName);
+        var videoOpts = await this._videoLocation();
+        videoOpts.path = this._makeVideoPath(opts);
 
         this.video.configure(videoOpts);
         this.video.start();
@@ -272,7 +254,7 @@ var VideoSteps = {
      */
     removeVideo: function (opts) {
 
-        if (!this.video.filePath || !fs.existsSync(this.video.filePath)) {
+        if (!this.video.filePath || !this.__fs.existsSync(this.video.filePath)) {
             LOG.warn("Video file doesn't exist");
             return false;
         };
@@ -280,14 +262,83 @@ var VideoSteps = {
         opts = U.defVal(opts, {});
         var check = U.defVal(opts.check, true);
 
-        fs.unlinkSync(this.video.filePath);
+        this.__fs.unlinkSync(this.video.filePath);
 
         if (check) {
-            expect(fs.existsSync(this.video.filePath),
+            expect(this.__fs.existsSync(this.video.filePath),
                    `Video file '${this.video.filePath}' wasn't removed`)
                 .to.be.false;
         };
         return true;
+    },
+    /**
+     * Helper to get video location.
+     * 
+     * @async
+     * @method
+     * @instance
+     * @protected
+     * @return {Promise&lt;object>} Dict of location.
+     */
+    _videoLocation: async function () {
+        var loc = {};
+        var screen = await this.__resolution.get();
+        var screenLoc = { x: 0, y: 0,
+                          width: screen.width,
+                          height: screen.height }
+
+        if (this.webdriver &amp;&amp; await this.webdriver.session()) {
+
+            _.assign(loc,
+                     (await this.webdriver.windowHandlePosition()).value);
+            _.assign(loc,
+                     (await this.webdriver.windowHandleSize()).value);
+
+            expect(U.isInScreen(loc, screenLoc),
+                   "Browser is outside of screen").to.be.true;
+
+            if (loc.x &lt; 0) loc.x = 0;
+            if (loc.y &lt; 0) loc.y = 0;
+            if (loc.x + loc.width > screen.width) {
+                loc.width = screen.width - loc.x;
+            };
+            if (loc.y + loc.height > screen.height) {
+                loc.height = screen.height - loc.y;
+            };
+
+        } else {
+            loc = screenLoc;
+        };
+
+        expect(loc.width, "Invalid video width").to.be.above(0);
+        expect(loc.height, "Invalid video height").to.be.above(0);
+
+        return loc;
+    },
+    /**
+     * Helper to make video path.
+     *
+     * @method
+     * @instance
+     * @protected
+     * @arg {object} [opts] - Step options.
+     * @arg {string} [opts.name] - File name. Extension `.avi` will be
+     *  added automatically. Default name will be generated with `uuid`
+     *  algorithm.
+     * @arg {string} [opts.path] - Folder to save video.
+     * @return {string} Full video path.
+     */
+    _makeVideoPath: function (opts) {
+        opts = U.defVal(opts, {});
+
+        var fileName = U.toKebab(U.defVal(opts.name, uuid()));
+        if (!fileName.endsWith(".avi")) fileName += ".avi";
+
+        var testName = CONF.curTestCase ? U.toKebab(CONF.curTestCase.name) : "";
+        return U.mkpath(
+            U.defVal(opts.path,
+                     path.resolve(CONF.reportsDir, testName, "videos")),
+            fileName);
     },
 };
 
@@ -337,7 +388,7 @@ module.exports = VideoSteps;
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
 	
-		on 2017-12-13T21:16:58+02:00
+		on 2017-12-31T16:42:54+02:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>

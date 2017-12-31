@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>GlaseJS Source: fixtures.js</title>
+	<title>GlaseJS Tutorial: Release Notes</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -98,57 +98,21 @@
 	<div class="col-md-12">
 	
 		<div id="main">
-			
+			<section class="tutorial-section">
 
-		<h1 class="page-title">Source: fixtures.js</h1>
+<header>
     
-<section>
-    <article>
-        <pre
-            class="sunlight-highlight-javascript linenums">"use strict";
-/**
- * `Video` fixtures.
- *
- * @module
- */
 
-var CONF = require("./config");
-/**
- * Fixture to capture tests video.
- *
- * @global
- * @function
- * @arg {function} func - Test funciton.
- */
-global.fxVideo = func => {
-    var isStarted;
-    var errNumBefore;
+    <h2>Release Notes</h2>
+</header>
 
-    before(async () => {
-        errNumBefore = CONF.curTestCase.errors.length;
-        isStarted = await SS.startVideo();
-    });
+<article>
+    <h3>v1.0.4</h3><ul>
+<li>Covered with tests.</li>
+</ul>
+</article>
 
-    func();
-
-    after(async () => {
-        if (!isStarted) return;
-        await SS.stopVideo();
-        isStarted = false;
-
-        if (!CONF.video.save &amp;&amp;
-                CONF.curTestCase.errors.length === errNumBefore) {
-            SS.removeVideo();
-        };
-    });
-};
-</pre>
-    </article>
 </section>
-
-
-
-
 
 		</div>
 	</div>
