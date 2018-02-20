@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>GlaseJS Source: pluginHelp.js</title>
+	<title>GlaseJS Source: fixtures/index.js</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -100,38 +100,20 @@
 		<div id="main">
 			
 
-		<h1 class="page-title">Source: pluginHelp.js</h1>
+		<h1 class="page-title">Source: fixtures/index.js</h1>
     
 <section>
     <article>
         <pre
             class="sunlight-highlight-javascript linenums">"use strict";
+
 /**
- * `Video` plugin help.
- * 
- * @function
- * @name pluginHelp
- * @arg {yargs} yargs - `yargs` instance in order to expand its options.
- * @arg {function} d - Function to manage option description: join, colorize, etc.
- * @return {yargs} - Expanded `yargs` instance.
+ * Video fixtures.
+ *
+ * @module
  */
-module.exports = (args, d) => {
-    return args
-        .options({
-            "video": {
-                describe: d("Capture video of executed tests.",
-                            "Video will be removed if test is passed."),
-                type: "boolean",
-                group: "Video:",
-            },
-            "video-save": {
-                describe: d("Capture video of executed tests.",
-                            "Video will be saved even if test is passed."),
-                type: "boolean",
-                group: "Video:",
-            },
-        });
-};
+
+global.fxVideo = require("./fxVideo");
 </pre>
     </article>
 </section>

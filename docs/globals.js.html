@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>GlaseJS Source: pluginHelp.js</title>
+	<title>GlaseJS Source: globals.js</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -100,38 +100,90 @@
 		<div id="main">
 			
 
-		<h1 class="page-title">Source: pluginHelp.js</h1>
+		<h1 class="page-title">Source: globals.js</h1>
     
 <section>
     <article>
         <pre
             class="sunlight-highlight-javascript linenums">"use strict";
+
 /**
- * `Video` plugin help.
- * 
- * @function
- * @name pluginHelp
- * @arg {yargs} yargs - `yargs` instance in order to expand its options.
- * @arg {function} d - Function to manage option description: join, colorize, etc.
- * @return {yargs} - Expanded `yargs` instance.
+ * `Glace video` globals.
+ *
+ * @module
  */
-module.exports = (args, d) => {
-    return args
-        .options({
-            "video": {
-                describe: d("Capture video of executed tests.",
-                            "Video will be removed if test is passed."),
-                type: "boolean",
-                group: "Video:",
-            },
-            "video-save": {
-                describe: d("Capture video of executed tests.",
-                            "Video will be saved even if test is passed."),
-                type: "boolean",
-                group: "Video:",
-            },
-        });
+
+var U = require("glace-utils");
+
+var CONF = require("./config");
+
+var gTest = global.test;
+var _test = (name, opts, fixtures, func) => {
+
+    if (opts instanceof Function) {
+        func = opts;
+        opts = {};
+        fixtures = [];
+    };
+    if (fixtures instanceof Function) {
+        func = fixtures;
+        fixtures = [];
+    };
+    opts = U.defVal(opts, {});
+    fixtures = U.defVal(fixtures, []);
+
+    var withVideo = U.defVal(opts.withVideo, true);
+    var needVideo = U.defVal(opts.needVideo, false);
+    var videoName = U.defVal(opts.videoName);
+    var videoDir = U.defVal(opts.videoDir);
+
+    if (CONF.video.capture &amp;&amp; withVideo || needVideo) {
+        if (!fixtures.includes(fxVideo)) {
+            fixtures.push(fxVideo.bind({ name: videoName, dir: videoDir }));
+        };
+    };
+
+    gTest(name, opts, fixtures, func);
 };
+
+var gForEachLanguage = global.forEachLanguage;
+var _forEachLanguage = (ctx, opts, fixtures, func) => {
+
+    if (ctx instanceof Function) {
+        func = ctx;
+        ctx = {};
+        opts = {};
+        fixtures = [];
+    };
+    if (opts instanceof Function) {
+        func = opts;
+        opts = {};
+        fixtures = [];
+    };
+    if (fixtures instanceof Function) {
+        func = fixtures;
+        fixtures = [];
+    };
+    ctx = U.defVal(ctx, {});
+    opts = U.defVal(opts, {});
+    fixtures = U.defVal(fixtures, []);
+
+    var withVideo = U.defVal(opts.withVideo, false);
+    var needVideo = U.defVal(opts.needVideo, false);
+    var videoName = U.defVal(opts.videoName);
+    var videoDir = U.defVal(opts.videoDir);
+
+    if (CONF.video.capture &amp;&amp; withVideo || needVideo) {
+        if (!fixtures.includes(fxVideo)) {
+            fixtures.push(fxVideo.bind({ name: videoName, dir: videoDir }));
+        };
+    };
+
+    gForEachLanguage(ctx, opts, fixtures, func);
+};
+
+global.test = _test;
+global.forEachLanguage = _forEachLanguage;
 </pre>
     </article>
 </section>
