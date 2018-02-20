@@ -1,6 +1,10 @@
+### v1.0.9
+
+- [Fixed](https://github.com/glacejs/glace-video/commit/4b7d55a617b359a1216fb1ceaf91d2c1aa441d29) bug that `test` and `forEachLanguage` options may be as `null`.
+
 ### v1.0.8
 
-- [Fixed](https://github.com/glacejs/glace-video/commit/df139af086f1ba90ff3280b92256cb85502ea110) bug that fixture undefined parameters were passed as null.
+- [Fixed](https://github.com/glacejs/glace-video/commit/df139af086f1ba90ff3280b92256cb85502ea110) bug that fixture `undefined` parameters were passed as `null`.
 
 ### v1.0.7
 

@@ -1,6 +1,6 @@
 {
   "name": "glace-video",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "GlaceJS Video plugin",
   "main": "lib/index.js",
   "scripts": {
