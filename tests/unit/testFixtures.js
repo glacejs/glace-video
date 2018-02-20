@@ -1,67 +1,110 @@
 "use strict";
 
-require("../../lib/fixtures");
-
 scope("fixtures", () => {
 
-    test("fxVideo", () => {
-        var calls,
-            oGlobal,
-            oSS;
+    scope("fxVideo", () => {
+        var fake, SS;
+        var sandbox = sinon.createSandbox();
+        var fxVideo = rewire("../../lib/fixtures/fxVideo");
 
-        before(() => {
-            oGlobal = global;
-            oSS = SS;
+        beforeEach(() => {
+            fake = {
+                before: sinon.spy(),
+                after: sinon.spy(),
+                _before: sinon.spy(),
+                _after: sinon.spy(),
+                func: sinon.spy(),
+            };
         });
 
-        after(() => {
-            global = oGlobal;
-            SS = oSS;
-            CONF.video.save = false;
+        afterEach(() => {
+            sandbox.restore();
+            fxVideo.__reset__();
         });
 
-        beforeChunk(() => {
-            calls = Promise.resolve()
-            global.before = cb => calls = calls.then(cb);
-            global.after = cb => calls = calls.then(cb);
+        test(".fxVideo()", () => {
 
-            SS.stopVideo = sinon.spy();
-            SS.removeVideo = sinon.spy();
+            beforeEach(() => {
+                fxVideo.__set__("before", fake.before);
+                fxVideo.__set__("after", fake.after);
+                fxVideo.__set__("_before", fake._before);
+                fxVideo.__set__("_after", fake._after);
+            });
+
+            chunk("in global context", () => {
+                fxVideo(fake.func);
+                expect(fake.func).to.be.calledOnce;
+                expect(fake._before).to.be.calledOnce;
+                expect(fake._after).to.be.calledOnce;
+                expect(fake.before).to.be.calledOnce;
+                expect(fake.after).to.be.calledOnce;
+                expect(fake._before.args[0][0].opts).to.be.undefined;
+            });
+
+            chunk("in custom context", () => {
+                fxVideo.bind({ name: "name", dir: "dir" })(fake.func);
+                expect(fake.func).to.be.calledOnce;
+                expect(fake._before).to.be.calledOnce;
+                expect(fake._after).to.be.calledOnce;
+                expect(fake.before).to.be.calledOnce;
+                expect(fake.after).to.be.calledOnce;
+                expect(fake._before.args[0][0].opts.name).to.be.equal("name");
+                expect(fake._before.args[0][0].opts.dir).to.be.equal("dir");
+            });
         });
 
-        chunk("exists globally", () => {
-            expect(fxVideo).to.exist;
+        test("._before()", () => {
+            var _before, ctx = {};
+
+            beforeEach(() => {
+                _before = fxVideo.__get__("_before");
+                SS = fxVideo.__get__("SS");
+                sandbox.stub(SS, "startVideo").returns(true);
+            });
+
+            chunk(async () => {
+                await _before(ctx)();
+                expect(SS.startVideo).to.be.calledOnce;
+                expect(ctx.errNumBefore).to.be.equal(0);
+                expect(ctx.isStarted).to.be.true;
+            });
         });
 
-        chunk("starts and stops video capture", async () => {
-            SS.startVideo = sinon.stub().returns(true);
-            fxVideo(() => {});
-            await calls;
+        test("._after()", () => {
+            var _after, ctx = {};
 
-            expect(SS.startVideo.calledOnce).to.be.true;
-            expect(SS.stopVideo.calledOnce).to.be.true;
-            expect(SS.removeVideo.calledOnce).to.be.true;
-        });
+            beforeEach(() => {
+                _after = fxVideo.__get__("_after");
+                SS = fxVideo.__get__("SS");
+                sandbox.stub(SS, "stopVideo");
+                sandbox.stub(SS, "removeVideo");
+            });
 
-        chunk("doesn't stop video capture if it wasn't started", async () => {
-            SS.startVideo = sinon.stub().returns(false);
-            fxVideo(() => {});
-            await calls;
+            chunk("skipped if video aren't captured", async () => {
+                ctx.isStarted = false;
+                await _after(ctx)();
+                expect(SS.stopVideo).to.not.be.called;
+            });
 
-            expect(SS.startVideo.calledOnce).to.be.true;
-            expect(SS.stopVideo.calledOnce).to.be.false;
-            expect(SS.removeVideo.calledOnce).to.be.false;
-        });
+            chunk("stops video capture", async () => {
+                ctx.isStarted = true;
+                ctx.errNumBefore = 0;
+                CONF.video.save = true;
+                await _after(ctx)();
+                expect(SS.stopVideo).to.be.calledOnce;
+                expect(SS.removeVideo).to.not.be.called;
+                expect(ctx.isStarted).to.be.false;
+            });
 
-        chunk("doesn't remove video file on passed tests if flag is provided", async () => {
-            SS.startVideo = sinon.stub().returns(true);
-            CONF.video.save = true;
-            fxVideo(() => {});
-            await calls;
-
-            expect(SS.startVideo.calledOnce).to.be.true;
-            expect(SS.stopVideo.calledOnce).to.be.true;
-            expect(SS.removeVideo.calledOnce).to.be.false;
+            chunk("removes captured video", async () => {
+                ctx.isStarted = true;
+                ctx.errNumBefore = 0;
+                CONF.video.save = false;
+                await _after(ctx)();
+                expect(SS.stopVideo).to.be.calledOnce;
+                expect(SS.removeVideo).to.be.calledOnce;
+                expect(ctx.isStarted).to.be.false;
+            });
         });
     });
 });
