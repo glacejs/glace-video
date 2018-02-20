@@ -1,3 +1,7 @@
+### v1.0.8
+
+- [Fixed](https://github.com/glacejs/glace-video/commit/df139af086f1ba90ff3280b92256cb85502ea110) bug that fixture undefined parameters were passed as null.
+
 ### v1.0.7
 
 - [Fixed](https://github.com/glacejs/glace-video/commit/aa5c38583ea30f880e1e973e2914fa84ec45c419) bug that `globals` wasn't available outside.
