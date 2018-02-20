@@ -14,6 +14,10 @@ test("Plugin lazy import", () => {
         expect(glaceVideo.config).to.exist;
     });
 
+    chunk("has globals", () => {
+        expect(glaceVideo.globals).to.exist;
+    });
+
     chunk("has plugin help", () => {
         expect(glaceVideo.pluginHelp).to.exist;
     });
