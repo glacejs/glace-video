@@ -1,3 +1,7 @@
+### v1.0.6
+
+- [Added](https://github.com/glacejs/glace-video/commit/b3361843e7606d68d187c011db816d401d1f6165) video options for functions `test` & `forEachLanguage`.
+
 ### v1.0.5
 
 - [Make](https://github.com/glacejs/glace-video/commit/6a03e80ae0aa87ccde85a4c5dc6219c2c57c57d8) options `--video` & `--video-save` interchangeable.
