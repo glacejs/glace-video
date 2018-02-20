@@ -1,3 +1,7 @@
+### v1.0.7
+
+- [Fixed](https://github.com/glacejs/glace-video/commit/aa5c38583ea30f880e1e973e2914fa84ec45c419) bug that `globals` wasn't available outside.
+
 ### v1.0.6
 
 - [Added](https://github.com/glacejs/glace-video/commit/b3361843e7606d68d187c011db816d401d1f6165) video options for functions `test` & `forEachLanguage`.
