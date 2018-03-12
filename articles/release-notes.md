@@ -1,3 +1,7 @@
+### v1.1.0
+
+- [Used](https://github.com/glacejs/glace-video/commit/eff97c1ce072615f15b919e6cfeeca11d47c8bb7) docstring style in steps.
+
 ### v1.0.9
 
 - [Fixed](https://github.com/glacejs/glace-video/commit/4b7d55a617b359a1216fb1ceaf91d2c1aa441d29) bug that `test` and `forEachLanguage` options may be as `null`.
