@@ -131,25 +131,27 @@ var VideoSteps = {
     __fs: fs,
     __resolution: resolution,
     __VideoRecorder: VideoRecorder,
-    /**
-     * Step to start video recording. Step recall will be skipped if video
-     *  recording wasn't stopped before.
-     *
-     * @async
-     * @method
-     * @instance
-     * @arg {object} [opts] - Step options.
-     * @arg {string} [opts.name] - File name. Extension `.avi` will be
-     *  added automatically. Default name will be generated with `uuid`
-     *  algorithm.
-     * @arg {string} [opts.dir] - Folder to save video.
-     * @arg {boolean} [opts.check=true] - Flag to check that video recording
-     *  was launched.
-     * @return {Promise&lt;boolean>} `true` if step was executed, `false` if
-     *  was skipped.
-     * @throws {AssertionError} If video recording wasn't launched.
-     */
+
     startVideo: async function (opts) {
+        /**
+         * Step to start video recording. Step recall will be skipped if video
+         *  recording wasn't stopped before.
+         *
+         * @async
+         * @memberOf VideoSteps
+         * @method startVideo
+         * @instance
+         * @arg {object} [opts] - Step options.
+         * @arg {string} [opts.name] - File name. Extension `.avi` will be
+         *  added automatically. Default name will be generated with `uuid`
+         *  algorithm.
+         * @arg {string} [opts.dir] - Folder to save video.
+         * @arg {boolean} [opts.check=true] - Flag to check that video recording
+         *  was launched.
+         * @return {Promise&lt;boolean>} `true` if step was executed, `false` if
+         *  was skipped.
+         * @throws {AssertionError} If video recording wasn't launched.
+         */
 
         if (this._isVideoStarted) {
             LOG.warn("Step to start video recording was passed already");
@@ -177,21 +179,23 @@ var VideoSteps = {
         this._isVideoStarted = true;
         return true;
     },
-    /**
-     * Step to stop video recording. Step call will be skipped if video
-     *  recording wasn't launched before.
-     *
-     * @async
-     * @method
-     * @instance
-     * @arg {object} [opts] - Step options.
-     * @arg {boolean} [opts.check=true] - Flag to check that video recording
-     *  was stopped.
-     * @return {Promise&lt;string>} Path to recorded video.
-     * @return {Promise&lt;boolean>} `false` if step was skipped.
-     * @throws {AssertionError} If video recording wasn't stopped.
-     */
+
     stopVideo: async function (opts) {
+        /**
+         * Step to stop video recording. Step call will be skipped if video
+         *  recording wasn't launched before.
+         *
+         * @async
+         * @memberOf VideoSteps
+         * @method stopVideo
+         * @instance
+         * @arg {object} [opts] - Step options.
+         * @arg {boolean} [opts.check=true] - Flag to check that video recording
+         *  was stopped.
+         * @return {Promise&lt;string>} Path to recorded video.
+         * @return {Promise&lt;boolean>} `false` if step was skipped.
+         * @throws {AssertionError} If video recording wasn't stopped.
+         */
 
         if (!this._isVideoStarted) {
             LOG.warn("Step to start video recording wasn't passed yet");
@@ -214,17 +218,20 @@ var VideoSteps = {
 
         return this.video.filePath;
     },
-    /**
-     * Step to get path to recorded video.
-     *
-     * @method
-     * @instance
-     * @arg {object} [opts] - Step options.
-     * @arg {boolean} [opts.check=true] - Flag to check that video is recorded
-     *  and path exists.
-     * @return {string} Path to recorded video.
-     */
+
     getVideo: function (opts) {
+        /**
+         * Step to get path to recorded video.
+         *
+         * @memberOf VideoSteps
+         * @method getVideo
+         * @instance
+         * @arg {object} [opts] - Step options.
+         * @arg {boolean} [opts.check=true] - Flag to check that video is recorded
+         *  and path exists.
+         * @return {string} Path to recorded video.
+         */
+
         expect(this.video,
                "Video recorder isn't initialized").to.exist;
 
@@ -242,17 +249,19 @@ var VideoSteps = {
 
         return this.video.filePath;
     },
-    /**
-     * Step to remove recorded video.
-     *
-     * @method
-     * @instance
-     * @arg {object} [opts] - Step options.
-     * @arg {boolean} [opts.check=true] - Flag to check step result.
-     * @return {boolean} `true` if step was executed, `false` if was skipped.
-     * @throws {AssertionError} If video file wasn't removed.
-     */
+
     removeVideo: function (opts) {
+        /**
+         * Step to remove recorded video.
+         *
+         * @memberOf VideoSteps
+         * @method removeVideo
+         * @instance
+         * @arg {object} [opts] - Step options.
+         * @arg {boolean} [opts.check=true] - Flag to check step result.
+         * @return {boolean} `true` if step was executed, `false` if was skipped.
+         * @throws {AssertionError} If video file wasn't removed.
+         */
 
         if (!this.video.filePath || !this.__fs.existsSync(this.video.filePath)) {
             LOG.warn("Video file doesn't exist");
@@ -388,7 +397,7 @@ module.exports = VideoSteps;
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
 	
-		on 2018-02-20T21:29:09+02:00
+		on 2018-03-12T23:22:08+02:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>
