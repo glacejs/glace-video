@@ -39,14 +39,14 @@ scope("Steps", () => {
             expect(LOG.warn.calledOnce).to.be.true;
         });
 
-       [function the_same () {},
-        function the_new () {
-            ctx.__VideoRecorder = function () {
-                this.configure = sinon.spy();
-                this.start = sinon.spy();
-                this.isRunning = true;
-            };
-        }].forEach(_before => {
+        [function the_same () {},
+            function the_new () {
+                ctx.__VideoRecorder = function () {
+                    this.configure = sinon.spy();
+                    this.start = sinon.spy();
+                    this.isRunning = true;
+                };
+            }].forEach(_before => {
             chunk(`uses ${_before.name} recorder instance`, async () => {
                 _before();
 
