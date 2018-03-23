@@ -7,7 +7,7 @@ scope("fixtures", () => {
         var sandbox = sinon.createSandbox();
         var fxVideo = rewire("../../lib/fixtures/fxVideo");
 
-        beforeEach(() => {
+        beforeChunk(() => {
             fake = {
                 before: sinon.spy(),
                 after: sinon.spy(),
@@ -17,14 +17,14 @@ scope("fixtures", () => {
             };
         });
 
-        afterEach(() => {
+        afterChunk(() => {
             sandbox.restore();
             fxVideo.__reset__();
         });
 
         test(".fxVideo()", () => {
 
-            beforeEach(() => {
+            beforeChunk(() => {
                 fxVideo.__set__("before", fake.before);
                 fxVideo.__set__("after", fake.after);
                 fxVideo.__set__("_before", fake._before);
@@ -56,7 +56,7 @@ scope("fixtures", () => {
         test("._before()", () => {
             var _before, ctx = {};
 
-            beforeEach(() => {
+            beforeChunk(() => {
                 _before = fxVideo.__get__("_before");
                 SS = fxVideo.__get__("SS");
                 sandbox.stub(SS, "startVideo").returns(true);
@@ -73,7 +73,7 @@ scope("fixtures", () => {
         test("._after()", () => {
             var _after, ctx = {};
 
-            beforeEach(() => {
+            beforeChunk(() => {
                 _after = fxVideo.__get__("_after");
                 SS = fxVideo.__get__("SS");
                 sandbox.stub(SS, "stopVideo");

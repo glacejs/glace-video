@@ -112,7 +112,7 @@ scope("Video", () => {
         beforeChunk(() => {
             video.isRunning = true;
             video._process = {};
-        })
+        });
 
         chunk("skipped if video recording isn't launched yet", () => {
             video.isRunning = false;
