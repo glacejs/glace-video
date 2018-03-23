@@ -1,3 +1,8 @@
+### v1.1.1
+
+- [Added](https://github.com/glacejs/glace-video/commit/4ac0c6d745a52ad4ae956b32e20780c69e46e3d3) project workflow commands.
+- [Logged](https://github.com/glacejs/glace-video/commit/3416f4f126456bd2efa57bc2103e7060ff344055) steps.
+
 ### v1.1.0
 
 - [Used](https://github.com/glacejs/glace-video/commit/eff97c1ce072615f15b919e6cfeeca11d47c8bb7) docstring style in steps.
