@@ -1,3 +1,7 @@
+### v1.1.2
+
+- [Fixed](https://github.com/glacejs/glace-video/commit/ac7282c3103db4c5f47e4889887e0e98d945779a) wrong file path of recorded video.
+
 ### v1.1.1
 
 - [Added](https://github.com/glacejs/glace-video/commit/4ac0c6d745a52ad4ae956b32e20780c69e46e3d3) project workflow commands.
