@@ -1,3 +1,7 @@
+### v1.1.3
+
+- [Added](https://github.com/glacejs/glace-video/commit/65209c2c3c97bbf7c515f2f98d04faf0ab590b89) [allure](https://docs.qameta.io/allure/) steps.
+
 ### v1.1.2
 
 - [Fixed](https://github.com/glacejs/glace-video/commit/ac7282c3103db4c5f47e4889887e0e98d945779a) wrong file path of recorded video.
