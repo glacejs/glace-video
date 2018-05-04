@@ -1,3 +1,7 @@
+### v1.1.4
+
+- [Added](https://github.com/glacejs/glace-video/commit/b0652bb30650dbe55168ca62e89a784f8401e810) steps logging.
+
 ### v1.1.3
 
 - [Added](https://github.com/glacejs/glace-video/commit/65209c2c3c97bbf7c515f2f98d04faf0ab590b89) [allure](https://docs.qameta.io/allure/) steps.
