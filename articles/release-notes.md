@@ -1,3 +1,7 @@
+### v1.1.5
+
+- Updated dependencies.
+
 ### v1.1.4
 
 - [Added](https://github.com/glacejs/glace-video/commit/b0652bb30650dbe55168ca62e89a784f8401e810) steps logging.

@@ -1,6 +1,6 @@
 {
   "name": "glace-video",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "GlaceJS Video plugin",
   "main": "lib/index.js",
   "scripts": {
@@ -40,20 +40,20 @@
   "dependencies": {
     "chai": "^4.1.2",
     "cross-spawn": "^5.1.0",
-    "glace-utils": "^1.2.5",
+    "glace-utils": "^1.2.7",
     "lodash": "^4.17.10",
     "screen-resolution": "^1.0.0",
     "uuid": "^3.2.1",
-    "which": "^1.3.0"
+    "which": "^1.3.1"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
-    "glace-core": "^1.5.6",
-    "glace-web": "^1.2.2",
+    "glace-core": "^1.6.2",
+    "glace-web": "^1.2.3",
     "ink-docstrap": "^1.3.0",
     "jsdoc": "^3.5.5",
     "jsdoc-strip-async-await": "^0.1.0",
-    "nyc": "^11.7.1",
+    "nyc": "^11.9.0",
     "pre-commit": "^1.2.2"
   },
   "optionalDependencies": {
