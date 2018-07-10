@@ -263,7 +263,7 @@ scope("Steps", () => {
         });
 
         chunk("uses passed folder path", () => {
-            var myPath = path.resolve(CONF.reportsDir, "my", "custom", "path");
+            var myPath = path.resolve(CONF.report.dir, "my", "custom", "path");
             var res = ctx._makeVideoPath({ dir: myPath });
             expect(path.dirname(res)).to.be.equal(myPath);
         });

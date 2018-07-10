@@ -1,4 +1,4 @@
 node_modules
 *.log
-reports
+report*
 .nyc_output
