@@ -1,3 +1,7 @@
+### v1.1.7
+
+- [Fixed](https://github.com/glacejs/glace-video/commit/ec9313f765bb2062e91358d3920db113391f8eed) bug that `forEachLanguage` iterator tried to process context instead of name.
+
 ### v1.1.6
 
 - Migrate to new `glace-core`.
