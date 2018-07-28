@@ -1,12 +1,12 @@
 {
-  "uid" : "bc208b44646b9bec",
-  "name" : ".start()",
-  "fullName" : "Video..start()",
-  "historyId" : "4b7bbb500c0a5b5734b438762a36a0d4",
+  "uid" : "16a398fbf787db7",
+  "name" : "instance",
+  "fullName" : "Video.instance",
+  "historyId" : "b6656ec9020e5e58c8f13af4e97539d2",
   "time" : {
-    "start" : 1532762468975,
-    "stop" : 1532762468979,
-    "duration" : 4
+    "start" : 1532775817495,
+    "stop" : 1532775817497,
+    "duration" : 2
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,11 +18,11 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "skipped if video recording is launched already",
+      "name" : "not running",
       "time" : {
-        "start" : 1532762468976,
-        "stop" : 1532762468977,
-        "duration" : 1
+        "start" : 1532775817496,
+        "stop" : 1532775817496,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,26 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "throws if video recorder isn't configured",
+      "name" : "doesn't have file path",
       "time" : {
-        "start" : 1532762468977,
-        "stop" : 1532762468978,
-        "duration" : 1
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "starts video recording",
-      "time" : {
-        "start" : 1532762468978,
-        "stop" : 1532762468979,
-        "duration" : 1
+        "start" : 1532775817497,
+        "stop" : 1532775817497,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -65,7 +50,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
+    "stepsCount" : 2,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -79,7 +64,7 @@
     "value" : "Video"
   }, {
     "name" : "testMethod",
-    "value" : ".start()"
+    "value" : "instance"
   }, {
     "name" : "package",
     "value" : "Video"
@@ -96,7 +81,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "bc208b44646b9bec.json",
+  "source" : "16a398fbf787db7.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

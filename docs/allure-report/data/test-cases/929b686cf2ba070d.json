@@ -1,12 +1,12 @@
 {
-  "uid" : "e2b3325ef1677913",
-  "name" : "Plugin lazy import",
-  "fullName" : "import.Plugin lazy import",
-  "historyId" : "195e12178d78f888191178bc67aeb146",
+  "uid" : "929b686cf2ba070d",
+  "name" : "._after()",
+  "fullName" : "fixtures.._after()",
+  "historyId" : "dbb68de51cc916200eadc733465ce9c5",
   "time" : {
-    "start" : 1532762468888,
-    "stop" : 1532762468896,
-    "duration" : 8
+    "start" : 1532775817394,
+    "stop" : 1532775817403,
+    "duration" : 9
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,11 +18,11 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "empty by default",
+      "name" : "skipped if video aren't captured",
       "time" : {
-        "start" : 1532762468888,
-        "stop" : 1532762468888,
-        "duration" : 0
+        "start" : 1532775817395,
+        "stop" : 1532775817398,
+        "duration" : 3
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,11 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "has config",
+      "name" : "stops video capture",
       "time" : {
-        "start" : 1532762468889,
-        "stop" : 1532762468889,
-        "duration" : 0
+        "start" : 1532775817398,
+        "stop" : 1532775817400,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,41 +48,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "has globals",
+      "name" : "removes captured video",
       "time" : {
-        "start" : 1532762468889,
-        "stop" : 1532762468895,
-        "duration" : 6
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "has plugin help",
-      "time" : {
-        "start" : 1532762468895,
-        "stop" : 1532762468895,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "has steps",
-      "time" : {
-        "start" : 1532762468896,
-        "stop" : 1532762468896,
-        "duration" : 0
+        "start" : 1532775817401,
+        "stop" : 1532775817402,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -95,7 +65,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 5,
+    "stepsCount" : 3,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -103,16 +73,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "import"
+    "value" : "fixtures"
   }, {
     "name" : "testClass",
-    "value" : "import"
+    "value" : "fixtures"
   }, {
     "name" : "testMethod",
-    "value" : "Plugin lazy import"
+    "value" : "._after()"
   }, {
     "name" : "package",
-    "value" : "import"
+    "value" : "fixtures"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -126,7 +96,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "e2b3325ef1677913.json",
+  "source" : "929b686cf2ba070d.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

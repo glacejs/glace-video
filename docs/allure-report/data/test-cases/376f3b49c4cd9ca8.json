@@ -1,12 +1,12 @@
 {
-  "uid" : "188c1074a8156980",
-  "name" : "instance",
-  "fullName" : "Video.instance",
-  "historyId" : "b6656ec9020e5e58c8f13af4e97539d2",
+  "uid" : "376f3b49c4cd9ca8",
+  "name" : "contains",
+  "fullName" : "config.contains",
+  "historyId" : "46c34cb728b967dd1c433ac26f572939",
   "time" : {
-    "start" : 1532762468963,
-    "stop" : 1532762468966,
-    "duration" : 3
+    "start" : 1532775817358,
+    "stop" : 1532775817366,
+    "duration" : 8
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,10 +18,25 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "not running",
+      "name" : "video section",
       "time" : {
-        "start" : 1532762468964,
-        "stop" : 1532762468965,
+        "start" : 1532775817362,
+        "stop" : 1532775817364,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "disabled video capture",
+      "time" : {
+        "start" : 1532775817364,
+        "stop" : 1532775817365,
         "duration" : 1
       },
       "status" : "passed",
@@ -33,11 +48,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "doesn't have file path",
+      "name" : "disabled video save",
       "time" : {
-        "start" : 1532762468965,
-        "stop" : 1532762468966,
-        "duration" : 1
+        "start" : 1532775817365,
+        "stop" : 1532775817365,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -50,7 +65,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 2,
+    "stepsCount" : 3,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -58,16 +73,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Video"
+    "value" : "config"
   }, {
     "name" : "testClass",
-    "value" : "Video"
+    "value" : "config"
   }, {
     "name" : "testMethod",
-    "value" : "instance"
+    "value" : "contains"
   }, {
     "name" : "package",
-    "value" : "Video"
+    "value" : "config"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -81,7 +96,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "188c1074a8156980.json",
+  "source" : "376f3b49c4cd9ca8.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

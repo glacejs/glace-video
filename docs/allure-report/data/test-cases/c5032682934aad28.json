@@ -1,12 +1,12 @@
 {
-  "uid" : "b8512cd93cd2c56",
-  "name" : "contains",
-  "fullName" : "config.contains",
-  "historyId" : "46c34cb728b967dd1c433ac26f572939",
+  "uid" : "c5032682934aad28",
+  "name" : "._makeVideoPath()",
+  "fullName" : "Steps.._makeVideoPath()",
+  "historyId" : "ff973880a99d71efea23ddae987b2e3a",
   "time" : {
-    "start" : 1532762468852,
-    "stop" : 1532762468859,
-    "duration" : 7
+    "start" : 1532775817476,
+    "stop" : 1532775817484,
+    "duration" : 8
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,41 +18,56 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "video section",
+      "name" : "generates new file name",
       "time" : {
-        "start" : 1532762468855,
-        "stop" : 1532762468857,
-        "duration" : 2
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "disabled video capture",
-      "time" : {
-        "start" : 1532762468857,
-        "stop" : 1532762468857,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "disabled video save",
-      "time" : {
-        "start" : 1532762468857,
-        "stop" : 1532762468858,
+        "start" : 1532775817477,
+        "stop" : 1532775817478,
         "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "transforms to kebab file name 'it's my file name'",
+      "time" : {
+        "start" : 1532775817479,
+        "stop" : 1532775817480,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "transforms to kebab file name 'it's my file name.avi'",
+      "time" : {
+        "start" : 1532775817480,
+        "stop" : 1532775817481,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "uses passed folder path",
+      "time" : {
+        "start" : 1532775817481,
+        "stop" : 1532775817483,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ ],
@@ -65,7 +80,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
+    "stepsCount" : 4,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -73,16 +88,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "config"
+    "value" : "Steps"
   }, {
     "name" : "testClass",
-    "value" : "config"
+    "value" : "Steps"
   }, {
     "name" : "testMethod",
-    "value" : "contains"
+    "value" : "._makeVideoPath()"
   }, {
     "name" : "package",
-    "value" : "config"
+    "value" : "Steps"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -96,7 +111,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "b8512cd93cd2c56.json",
+  "source" : "c5032682934aad28.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

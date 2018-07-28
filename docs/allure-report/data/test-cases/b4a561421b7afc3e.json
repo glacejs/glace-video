@@ -1,12 +1,12 @@
 {
-  "uid" : "c6b19f364f0f4680",
-  "name" : ".configure()",
-  "fullName" : "Video..configure()",
-  "historyId" : "890845d1d1f3904a26d33bfa94aae5ac",
+  "uid" : "b4a561421b7afc3e",
+  "name" : ".start()",
+  "fullName" : "Video..start()",
+  "historyId" : "4b7bbb500c0a5b5734b438762a36a0d4",
   "time" : {
-    "start" : 1532762468967,
-    "stop" : 1532762468975,
-    "duration" : 8
+    "start" : 1532775817504,
+    "stop" : 1532775817509,
+    "duration" : 5
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,25 +18,10 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "uses default options",
+      "name" : "skipped if video recording is launched already",
       "time" : {
-        "start" : 1532762468967,
-        "stop" : 1532762468970,
-        "duration" : 3
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "uses passed options",
-      "time" : {
-        "start" : 1532762468970,
-        "stop" : 1532762468971,
+        "start" : 1532775817505,
+        "stop" : 1532775817506,
         "duration" : 1
       },
       "status" : "passed",
@@ -48,10 +33,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "throws error if ffmpeg wasn't found on windows",
+      "name" : "throws if video recorder isn't configured",
       "time" : {
-        "start" : 1532762468971,
-        "stop" : 1532762468972,
+        "start" : 1532775817506,
+        "stop" : 1532775817507,
         "duration" : 1
       },
       "status" : "passed",
@@ -63,25 +48,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "throws error if neither ffmpeg nor avconv weren't found on linux",
+      "name" : "starts video recording",
       "time" : {
-        "start" : 1532762468972,
-        "stop" : 1532762468973,
-        "duration" : 1
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "throws error if os isn't supported",
-      "time" : {
-        "start" : 1532762468974,
-        "stop" : 1532762468975,
+        "start" : 1532775817507,
+        "stop" : 1532775817508,
         "duration" : 1
       },
       "status" : "passed",
@@ -95,7 +65,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 5,
+    "stepsCount" : 3,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -109,7 +79,7 @@
     "value" : "Video"
   }, {
     "name" : "testMethod",
-    "value" : ".configure()"
+    "value" : ".start()"
   }, {
     "name" : "package",
     "value" : "Video"
@@ -126,7 +96,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c6b19f364f0f4680.json",
+  "source" : "b4a561421b7afc3e.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

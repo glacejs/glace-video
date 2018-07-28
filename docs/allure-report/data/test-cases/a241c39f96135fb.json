@@ -1,12 +1,12 @@
 {
-  "uid" : "815faf5e15b52445",
-  "name" : ".stop()",
-  "fullName" : "Video..stop()",
-  "historyId" : "e250f1cba3beaaa28198b23cb6a98014",
+  "uid" : "a241c39f96135fb",
+  "name" : ".configure()",
+  "fullName" : "Video..configure()",
+  "historyId" : "890845d1d1f3904a26d33bfa94aae5ac",
   "time" : {
-    "start" : 1532762468979,
-    "stop" : 1532762468988,
-    "duration" : 9
+    "start" : 1532775817498,
+    "stop" : 1532775817504,
+    "duration" : 6
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,10 +18,10 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "skipped if video recording isn't launched yet",
+      "name" : "uses default options",
       "time" : {
-        "start" : 1532762468980,
-        "stop" : 1532762468981,
+        "start" : 1532775817498,
+        "stop" : 1532775817499,
         "duration" : 1
       },
       "status" : "passed",
@@ -33,11 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "stops video recording",
+      "name" : "uses passed options",
       "time" : {
-        "start" : 1532762468981,
-        "stop" : 1532762468984,
-        "duration" : 3
+        "start" : 1532775817499,
+        "stop" : 1532775817500,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,11 +48,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "throws error if recording process was failed",
+      "name" : "throws error if ffmpeg wasn't found on windows",
       "time" : {
-        "start" : 1532762468984,
-        "stop" : 1532762468986,
-        "duration" : 2
+        "start" : 1532775817500,
+        "stop" : 1532775817501,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -63,11 +63,26 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "throws error if recording process has failed exit code",
+      "name" : "throws error if neither ffmpeg nor avconv weren't found on linux",
       "time" : {
-        "start" : 1532762468986,
-        "stop" : 1532762468988,
-        "duration" : 2
+        "start" : 1532775817501,
+        "stop" : 1532775817502,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "throws error if os isn't supported",
+      "time" : {
+        "start" : 1532775817502,
+        "stop" : 1532775817503,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -80,7 +95,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 4,
+    "stepsCount" : 5,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -94,7 +109,7 @@
     "value" : "Video"
   }, {
     "name" : "testMethod",
-    "value" : ".stop()"
+    "value" : ".configure()"
   }, {
     "name" : "package",
     "value" : "Video"
@@ -111,7 +126,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "815faf5e15b52445.json",
+  "source" : "a241c39f96135fb.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },
