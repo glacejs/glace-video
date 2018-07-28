@@ -6,7 +6,7 @@ var U = require("glace-utils");
 
 var VideoRecorder = require("../../lib/video");
 
-scope("Video", () => {
+suite("Video", () => {
     var video;
 
     beforeChunk(() => {

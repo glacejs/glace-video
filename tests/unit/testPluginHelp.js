@@ -2,15 +2,18 @@
 
 var pluginHelp = require("../../lib").pluginHelp;
 
-test("plugin help contains option", () => {
+suite("help", () => {
 
-    var opts = pluginHelp({ options: opts => opts }, d => d);
+    test("plugin help contains option", () => {
 
-    chunk("video", () => {
-        expect(opts["video"]).to.exist;
-    });
-
-    chunk("video-save", () => {
-        expect(opts["video-save"]).to.exist;
+        var opts = pluginHelp({ options: opts => opts }, d => d);
+    
+        chunk("video", () => {
+            expect(opts["video"]).to.exist;
+        });
+    
+        chunk("video-save", () => {
+            expect(opts["video-save"]).to.exist;
+        });
     });
 });

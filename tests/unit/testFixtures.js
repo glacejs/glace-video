@@ -1,6 +1,6 @@
 "use strict";
 
-scope("fixtures", () => {
+suite("fixtures", () => {
 
     scope("fxVideo", () => {
         var fake, SS;
@@ -71,13 +71,17 @@ scope("fixtures", () => {
         });
 
         test("._after()", () => {
-            var _after, ctx = {};
+            var _after, ctx = {}, allure;
 
             beforeChunk(() => {
                 _after = fxVideo.__get__("_after");
                 SS = fxVideo.__get__("SS");
                 sandbox.stub(SS, "stopVideo");
                 sandbox.stub(SS, "removeVideo");
+                allure = {
+                    attachVideo: sinon.spy(),
+                };
+                fxVideo.__set__("allure", allure);
             });
 
             chunk("skipped if video aren't captured", async () => {

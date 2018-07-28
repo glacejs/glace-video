@@ -6,7 +6,7 @@ var LOG = require("glace-utils").logger;
 
 var Steps = require("../../lib").Steps;
 
-scope("Steps", () => {
+suite("Steps", () => {
     var ctx;
 
     beforeChunk(() => {
