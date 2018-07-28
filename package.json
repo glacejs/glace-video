@@ -13,7 +13,7 @@
     "lint:fix": "npm run lint -- --fix",
     "test": "npm run lint && npm run test:unit && npm run test:e2e",
     "test:unit": "nyc ./tests/run tests/unit",
-    "test:cover": "nyc --reporter=lcov ./tests/run tests/unit tests/e2e --allure",
+    "test:cover": "nyc --reporter=lcov --report-dir ./docs/tests-cover ./tests/run tests/unit tests/e2e --allure",
     "test:commit": "./tests/run tests/unit",
     "test:e2e": "./tests/run tests/e2e"
   },

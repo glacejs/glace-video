@@ -1,12 +1,12 @@
 {
-  "uid" : "23d85b880fb6d841",
+  "uid" : "188c1074a8156980",
   "name" : "instance",
   "fullName" : "Video.instance",
   "historyId" : "b6656ec9020e5e58c8f13af4e97539d2",
   "time" : {
-    "start" : 1532762359498,
-    "stop" : 1532762359500,
-    "duration" : 2
+    "start" : 1532762468963,
+    "stop" : 1532762468966,
+    "duration" : 3
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -20,8 +20,8 @@
     "steps" : [ {
       "name" : "not running",
       "time" : {
-        "start" : 1532762359498,
-        "stop" : 1532762359499,
+        "start" : 1532762468964,
+        "stop" : 1532762468965,
         "duration" : 1
       },
       "status" : "passed",
@@ -35,8 +35,8 @@
     }, {
       "name" : "doesn't have file path",
       "time" : {
-        "start" : 1532762359499,
-        "stop" : 1532762359500,
+        "start" : 1532762468965,
+        "stop" : 1532762468966,
         "duration" : 1
       },
       "status" : "passed",
@@ -81,7 +81,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "23d85b880fb6d841.json",
+  "source" : "188c1074a8156980.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

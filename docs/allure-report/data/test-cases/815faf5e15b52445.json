@@ -1,12 +1,12 @@
 {
-  "uid" : "d2a984047b158080",
-  "name" : "Plugin lazy import",
-  "fullName" : "import.Plugin lazy import",
-  "historyId" : "195e12178d78f888191178bc67aeb146",
+  "uid" : "815faf5e15b52445",
+  "name" : ".stop()",
+  "fullName" : "Video..stop()",
+  "historyId" : "e250f1cba3beaaa28198b23cb6a98014",
   "time" : {
-    "start" : 1532762359412,
-    "stop" : 1532762359416,
-    "duration" : 4
+    "start" : 1532762468979,
+    "stop" : 1532762468988,
+    "duration" : 9
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,55 +18,10 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "empty by default",
+      "name" : "skipped if video recording isn't launched yet",
       "time" : {
-        "start" : 1532762359413,
-        "stop" : 1532762359413,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "has config",
-      "time" : {
-        "start" : 1532762359414,
-        "stop" : 1532762359414,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "has globals",
-      "time" : {
-        "start" : 1532762359414,
-        "stop" : 1532762359414,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "has plugin help",
-      "time" : {
-        "start" : 1532762359414,
-        "stop" : 1532762359415,
+        "start" : 1532762468980,
+        "stop" : 1532762468981,
         "duration" : 1
       },
       "status" : "passed",
@@ -78,11 +33,41 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "has steps",
+      "name" : "stops video recording",
       "time" : {
-        "start" : 1532762359415,
-        "stop" : 1532762359415,
-        "duration" : 0
+        "start" : 1532762468981,
+        "stop" : 1532762468984,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "throws error if recording process was failed",
+      "time" : {
+        "start" : 1532762468984,
+        "stop" : 1532762468986,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "throws error if recording process has failed exit code",
+      "time" : {
+        "start" : 1532762468986,
+        "stop" : 1532762468988,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ ],
@@ -95,7 +80,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 5,
+    "stepsCount" : 4,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -103,16 +88,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "import"
+    "value" : "Video"
   }, {
     "name" : "testClass",
-    "value" : "import"
+    "value" : "Video"
   }, {
     "name" : "testMethod",
-    "value" : "Plugin lazy import"
+    "value" : ".stop()"
   }, {
     "name" : "package",
-    "value" : "import"
+    "value" : "Video"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -126,7 +111,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "d2a984047b158080.json",
+  "source" : "815faf5e15b52445.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

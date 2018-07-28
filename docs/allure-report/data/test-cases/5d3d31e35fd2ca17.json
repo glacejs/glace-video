@@ -1,12 +1,12 @@
 {
-  "uid" : "3b820e685ae802e",
-  "name" : "._videoLocation()",
-  "fullName" : "Steps.._videoLocation()",
-  "historyId" : "e78e6b1f6316d8916d2a2df72c683eaf",
+  "uid" : "5d3d31e35fd2ca17",
+  "name" : "._after()",
+  "fullName" : "fixtures.._after()",
+  "historyId" : "dbb68de51cc916200eadc733465ce9c5",
   "time" : {
-    "start" : 1532762359467,
-    "stop" : 1532762359473,
-    "duration" : 6
+    "start" : 1532762468878,
+    "stop" : 1532762468885,
+    "duration" : 7
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,10 +18,10 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "captures browser size if browser is launched",
+      "name" : "skipped if video aren't captured",
       "time" : {
-        "start" : 1532762359467,
-        "stop" : 1532762359469,
+        "start" : 1532762468879,
+        "stop" : 1532762468881,
         "duration" : 2
       },
       "status" : "passed",
@@ -33,11 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "captures screen size if browser isn't launched",
+      "name" : "stops video capture",
       "time" : {
-        "start" : 1532762359469,
-        "stop" : 1532762359470,
-        "duration" : 1
+        "start" : 1532762468881,
+        "stop" : 1532762468883,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,25 +48,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "captures screen size if browser isn't init",
+      "name" : "removes captured video",
       "time" : {
-        "start" : 1532762359471,
-        "stop" : 1532762359472,
-        "duration" : 1
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "throws error that browser out of screen",
-      "time" : {
-        "start" : 1532762359472,
-        "stop" : 1532762359473,
+        "start" : 1532762468883,
+        "stop" : 1532762468884,
         "duration" : 1
       },
       "status" : "passed",
@@ -80,7 +65,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 4,
+    "stepsCount" : 3,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -88,16 +73,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Steps"
+    "value" : "fixtures"
   }, {
     "name" : "testClass",
-    "value" : "Steps"
+    "value" : "fixtures"
   }, {
     "name" : "testMethod",
-    "value" : "._videoLocation()"
+    "value" : "._after()"
   }, {
     "name" : "package",
-    "value" : "Steps"
+    "value" : "fixtures"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -111,7 +96,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "3b820e685ae802e.json",
+  "source" : "5d3d31e35fd2ca17.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

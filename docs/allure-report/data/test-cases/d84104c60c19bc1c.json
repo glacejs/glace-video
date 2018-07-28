@@ -1,12 +1,12 @@
 {
-  "uid" : "5f95bd98503d1efe",
-  "name" : "Record video of browser",
-  "fullName" : "e2e tests.Record video of browser",
-  "historyId" : "f683d68de49d93756f321d69d820856c",
+  "uid" : "d84104c60c19bc1c",
+  "name" : "Record video of display",
+  "fullName" : "e2e tests.Record video of display",
+  "historyId" : "6cf8dcb55152617c2da6d868fa0005f3",
   "time" : {
-    "start" : 1532762367279,
-    "stop" : 1532762380276,
-    "duration" : 12997
+    "start" : 1532762468996,
+    "stop" : 1532762476861,
+    "duration" : 7865
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,49 +18,19 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Start selenium server",
+      "name" : "Record video to /home/user/vega/projects/glace/glace-video/report/record-video-of-display/videos/52b3d648-8258-40fb-88cc-1327cb616b7d.avi",
       "time" : {
-        "start" : 1532762367306,
-        "stop" : 1532762368331,
-        "duration" : 1025
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Launch browser via selenium",
-      "time" : {
-        "start" : 1532762368339,
-        "stop" : 1532762371573,
-        "duration" : 3234
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Record video to /home/user/vega/projects/glace/glace-video/report/record-video-of-browser/videos/df1a682a-4bd4-4edd-b5d2-adff073d37ea.avi",
-      "time" : {
-        "start" : 1532762371589,
-        "stop" : 1532762372601,
-        "duration" : 1012
+        "start" : 1532762469361,
+        "stop" : 1532762470375,
+        "duration" : 1014
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Sleep 1 sec because it needs a time to start recording",
         "time" : {
-          "start" : 1532762371600,
-          "stop" : 1532762372601,
-          "duration" : 1001
+          "start" : 1532762469371,
+          "stop" : 1532762470374,
+          "duration" : 1003
         },
         "status" : "passed",
         "steps" : [ ],
@@ -80,17 +50,17 @@
     }, {
       "name" : "",
       "time" : {
-        "start" : 1532762372602,
-        "stop" : 1532762377603,
-        "duration" : 5001
+        "start" : 1532762470375,
+        "stop" : 1532762475381,
+        "duration" : 5006
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Get video file",
         "time" : {
-          "start" : 1532762372602,
-          "stop" : 1532762372602,
-          "duration" : 0
+          "start" : 1532762470375,
+          "stop" : 1532762470376,
+          "duration" : 1
         },
         "status" : "passed",
         "steps" : [ ],
@@ -103,9 +73,9 @@
       }, {
         "name" : "Sleep 5 sec because just pause",
         "time" : {
-          "start" : 1532762372602,
-          "stop" : 1532762377602,
-          "duration" : 5000
+          "start" : 1532762470376,
+          "stop" : 1532762475380,
+          "duration" : 5004
         },
         "status" : "passed",
         "steps" : [ ],
@@ -125,17 +95,17 @@
     }, {
       "name" : "Stop video recording",
       "time" : {
-        "start" : 1532762377603,
-        "stop" : 1532762378874,
-        "duration" : 1271
+        "start" : 1532762475381,
+        "stop" : 1532762476861,
+        "duration" : 1480
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Sleep 1 sec because it needs a time to gather latest frames",
         "time" : {
-          "start" : 1532762377603,
-          "stop" : 1532762378605,
-          "duration" : 1002
+          "start" : 1532762475381,
+          "stop" : 1532762476382,
+          "duration" : 1001
         },
         "status" : "passed",
         "steps" : [ ],
@@ -155,54 +125,9 @@
     }, {
       "name" : "Remove recorded video",
       "time" : {
-        "start" : 1532762378874,
-        "stop" : 1532762378874,
+        "start" : 1532762476861,
+        "stop" : 1532762476861,
         "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Close browser",
-      "time" : {
-        "start" : 1532762378874,
-        "stop" : 1532762379936,
-        "duration" : 1062
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "Sleep 1 sec because webdriver process will be stopped",
-        "time" : {
-          "start" : 1532762378932,
-          "stop" : 1532762379934,
-          "duration" : 1002
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "hasContent" : false
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 1,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : true
-    }, {
-      "name" : "Stop selenium server",
-      "time" : {
-        "start" : 1532762379937,
-        "stop" : 1532762380274,
-        "duration" : 337
       },
       "status" : "passed",
       "steps" : [ ],
@@ -215,7 +140,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 13,
+    "stepsCount" : 8,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -229,7 +154,7 @@
     "value" : "e2e tests"
   }, {
     "name" : "testMethod",
-    "value" : "Record video of browser"
+    "value" : "Record video of display"
   }, {
     "name" : "package",
     "value" : "e2e tests"
@@ -246,7 +171,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "5f95bd98503d1efe.json",
+  "source" : "d84104c60c19bc1c.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

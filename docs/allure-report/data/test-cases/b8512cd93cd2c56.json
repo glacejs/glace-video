@@ -1,12 +1,12 @@
 {
-  "uid" : "9d0ff7f36f6139fd",
-  "name" : ".stop()",
-  "fullName" : "Video..stop()",
-  "historyId" : "e250f1cba3beaaa28198b23cb6a98014",
+  "uid" : "b8512cd93cd2c56",
+  "name" : "contains",
+  "fullName" : "config.contains",
+  "historyId" : "46c34cb728b967dd1c433ac26f572939",
   "time" : {
-    "start" : 1532762359510,
-    "stop" : 1532762359516,
-    "duration" : 6
+    "start" : 1532762468852,
+    "stop" : 1532762468859,
+    "duration" : 7
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,25 +18,10 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "skipped if video recording isn't launched yet",
+      "name" : "video section",
       "time" : {
-        "start" : 1532762359510,
-        "stop" : 1532762359511,
-        "duration" : 1
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "stops video recording",
-      "time" : {
-        "start" : 1532762359511,
-        "stop" : 1532762359513,
+        "start" : 1532762468855,
+        "stop" : 1532762468857,
         "duration" : 2
       },
       "status" : "passed",
@@ -48,11 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "throws error if recording process was failed",
+      "name" : "disabled video capture",
       "time" : {
-        "start" : 1532762359513,
-        "stop" : 1532762359514,
-        "duration" : 1
+        "start" : 1532762468857,
+        "stop" : 1532762468857,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -63,11 +48,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "throws error if recording process has failed exit code",
+      "name" : "disabled video save",
       "time" : {
-        "start" : 1532762359514,
-        "stop" : 1532762359516,
-        "duration" : 2
+        "start" : 1532762468857,
+        "stop" : 1532762468858,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -80,7 +65,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 4,
+    "stepsCount" : 3,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -88,16 +73,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Video"
+    "value" : "config"
   }, {
     "name" : "testClass",
-    "value" : "Video"
+    "value" : "config"
   }, {
     "name" : "testMethod",
-    "value" : ".stop()"
+    "value" : "contains"
   }, {
     "name" : "package",
-    "value" : "Video"
+    "value" : "config"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -111,7 +96,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "9d0ff7f36f6139fd.json",
+  "source" : "b8512cd93cd2c56.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

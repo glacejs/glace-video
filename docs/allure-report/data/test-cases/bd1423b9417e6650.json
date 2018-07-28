@@ -1,12 +1,12 @@
 {
-  "uid" : "b28c0cfe59c7c117",
-  "name" : "contains",
-  "fullName" : "config.contains",
-  "historyId" : "46c34cb728b967dd1c433ac26f572939",
+  "uid" : "bd1423b9417e6650",
+  "name" : ".fxVideo()",
+  "fullName" : "fixtures..fxVideo()",
+  "historyId" : "f7e7ab5fe3d8c4372e841df722e1c4",
   "time" : {
-    "start" : 1532762359369,
-    "stop" : 1532762359379,
-    "duration" : 10
+    "start" : 1532762468867,
+    "stop" : 1532762468874,
+    "duration" : 7
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,11 +18,11 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "video section",
+      "name" : "in global context",
       "time" : {
-        "start" : 1532762359374,
-        "stop" : 1532762359376,
-        "duration" : 2
+        "start" : 1532762468868,
+        "stop" : 1532762468871,
+        "duration" : 3
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,25 +33,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "disabled video capture",
+      "name" : "in custom context",
       "time" : {
-        "start" : 1532762359376,
-        "stop" : 1532762359377,
-        "duration" : 1
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "disabled video save",
-      "time" : {
-        "start" : 1532762359377,
-        "stop" : 1532762359378,
+        "start" : 1532762468872,
+        "stop" : 1532762468873,
         "duration" : 1
       },
       "status" : "passed",
@@ -65,7 +50,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
+    "stepsCount" : 2,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -73,16 +58,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "config"
+    "value" : "fixtures"
   }, {
     "name" : "testClass",
-    "value" : "config"
+    "value" : "fixtures"
   }, {
     "name" : "testMethod",
-    "value" : "contains"
+    "value" : ".fxVideo()"
   }, {
     "name" : "package",
-    "value" : "config"
+    "value" : "fixtures"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -96,7 +81,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "b28c0cfe59c7c117.json",
+  "source" : "bd1423b9417e6650.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

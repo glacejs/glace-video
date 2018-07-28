@@ -1,12 +1,12 @@
 {
-  "uid" : "1963ecc1d5947e67",
-  "name" : "Record video of display",
-  "fullName" : "e2e tests.Record video of display",
-  "historyId" : "6cf8dcb55152617c2da6d868fa0005f3",
+  "uid" : "92aa1e9d8bd1a64e",
+  "name" : "Record video of browser",
+  "fullName" : "e2e tests.Record video of browser",
+  "historyId" : "f683d68de49d93756f321d69d820856c",
   "time" : {
-    "start" : 1532762359520,
-    "stop" : 1532762367278,
-    "duration" : 7758
+    "start" : 1532762476861,
+    "stop" : 1532762489330,
+    "duration" : 12469
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,19 +18,49 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Record video to /home/user/vega/projects/glace/glace-video/report/record-video-of-display/videos/199150de-6a81-4749-8c20-9319e5881637.avi",
+      "name" : "Start selenium server",
       "time" : {
-        "start" : 1532762359834,
-        "stop" : 1532762360847,
-        "duration" : 1013
+        "start" : 1532762476887,
+        "stop" : 1532762477659,
+        "duration" : 772
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Launch browser via selenium",
+      "time" : {
+        "start" : 1532762477664,
+        "stop" : 1532762480612,
+        "duration" : 2948
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Record video to /home/user/vega/projects/glace/glace-video/report/record-video-of-browser/videos/f9ac2666-83fc-4857-9821-be092a7fd614.avi",
+      "time" : {
+        "start" : 1532762480628,
+        "stop" : 1532762481639,
+        "duration" : 1011
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Sleep 1 sec because it needs a time to start recording",
         "time" : {
-          "start" : 1532762359845,
-          "stop" : 1532762360847,
-          "duration" : 1002
+          "start" : 1532762480637,
+          "stop" : 1532762481638,
+          "duration" : 1001
         },
         "status" : "passed",
         "steps" : [ ],
@@ -50,16 +80,16 @@
     }, {
       "name" : "",
       "time" : {
-        "start" : 1532762360847,
-        "stop" : 1532762365851,
+        "start" : 1532762481639,
+        "stop" : 1532762486643,
         "duration" : 5004
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Get video file",
         "time" : {
-          "start" : 1532762360848,
-          "stop" : 1532762360848,
+          "start" : 1532762481639,
+          "stop" : 1532762481639,
           "duration" : 0
         },
         "status" : "passed",
@@ -73,9 +103,9 @@
       }, {
         "name" : "Sleep 5 sec because just pause",
         "time" : {
-          "start" : 1532762360848,
-          "stop" : 1532762365851,
-          "duration" : 5003
+          "start" : 1532762481640,
+          "stop" : 1532762486642,
+          "duration" : 5002
         },
         "status" : "passed",
         "steps" : [ ],
@@ -95,17 +125,17 @@
     }, {
       "name" : "Stop video recording",
       "time" : {
-        "start" : 1532762365851,
-        "stop" : 1532762367278,
-        "duration" : 1427
+        "start" : 1532762486643,
+        "stop" : 1532762487885,
+        "duration" : 1242
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Sleep 1 sec because it needs a time to gather latest frames",
         "time" : {
-          "start" : 1532762365851,
-          "stop" : 1532762366853,
-          "duration" : 1002
+          "start" : 1532762486643,
+          "stop" : 1532762487644,
+          "duration" : 1001
         },
         "status" : "passed",
         "steps" : [ ],
@@ -125,9 +155,54 @@
     }, {
       "name" : "Remove recorded video",
       "time" : {
-        "start" : 1532762367278,
-        "stop" : 1532762367278,
+        "start" : 1532762487885,
+        "stop" : 1532762487885,
         "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Close browser",
+      "time" : {
+        "start" : 1532762487885,
+        "stop" : 1532762488991,
+        "duration" : 1106
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Sleep 1 sec because webdriver process will be stopped",
+        "time" : {
+          "start" : 1532762487943,
+          "stop" : 1532762488991,
+          "duration" : 1048
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Stop selenium server",
+      "time" : {
+        "start" : 1532762488992,
+        "stop" : 1532762489329,
+        "duration" : 337
       },
       "status" : "passed",
       "steps" : [ ],
@@ -140,7 +215,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 8,
+    "stepsCount" : 13,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -154,7 +229,7 @@
     "value" : "e2e tests"
   }, {
     "name" : "testMethod",
-    "value" : "Record video of display"
+    "value" : "Record video of browser"
   }, {
     "name" : "package",
     "value" : "e2e tests"
@@ -171,7 +246,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "1963ecc1d5947e67.json",
+  "source" : "92aa1e9d8bd1a64e.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },
