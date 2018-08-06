@@ -1,12 +1,12 @@
 {
-  "uid" : "929b686cf2ba070d",
-  "name" : "._after()",
-  "fullName" : "fixtures.._after()",
-  "historyId" : "dbb68de51cc916200eadc733465ce9c5",
+  "uid" : "313d92556c83a2b6",
+  "name" : ".fxVideo()",
+  "fullName" : "fixtures..fxVideo()",
+  "historyId" : "f7e7ab5fe3d8c4372e841df722e1c4",
   "time" : {
-    "start" : 1532775817394,
-    "stop" : 1532775817403,
-    "duration" : 9
+    "start" : 1533577104910,
+    "stop" : 1533577104916,
+    "duration" : 6
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,10 +18,10 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "skipped if video aren't captured",
+      "name" : "in global context",
       "time" : {
-        "start" : 1532775817395,
-        "stop" : 1532775817398,
+        "start" : 1533577104911,
+        "stop" : 1533577104914,
         "duration" : 3
       },
       "status" : "passed",
@@ -33,25 +33,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "stops video capture",
+      "name" : "in custom context",
       "time" : {
-        "start" : 1532775817398,
-        "stop" : 1532775817400,
-        "duration" : 2
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "removes captured video",
-      "time" : {
-        "start" : 1532775817401,
-        "stop" : 1532775817402,
+        "start" : 1533577104915,
+        "stop" : 1533577104916,
         "duration" : 1
       },
       "status" : "passed",
@@ -65,7 +50,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
+    "stepsCount" : 2,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -79,7 +64,7 @@
     "value" : "fixtures"
   }, {
     "name" : "testMethod",
-    "value" : "._after()"
+    "value" : ".fxVideo()"
   }, {
     "name" : "package",
     "value" : "fixtures"
@@ -96,7 +81,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "929b686cf2ba070d.json",
+  "source" : "313d92556c83a2b6.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

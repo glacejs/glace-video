@@ -1,12 +1,12 @@
 {
-  "uid" : "b3c854fa1a8041e4",
-  "name" : ".stop()",
-  "fullName" : "Video..stop()",
-  "historyId" : "e250f1cba3beaaa28198b23cb6a98014",
+  "uid" : "5bb6ad5d44c93b59",
+  "name" : ".configure()",
+  "fullName" : "Video..configure()",
+  "historyId" : "890845d1d1f3904a26d33bfa94aae5ac",
   "time" : {
-    "start" : 1532775817509,
-    "stop" : 1532775817518,
-    "duration" : 9
+    "start" : 1533577105274,
+    "stop" : 1533577105298,
+    "duration" : 24
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,11 +18,11 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "skipped if video recording isn't launched yet",
+      "name" : "uses default options",
       "time" : {
-        "start" : 1532775817509,
-        "stop" : 1532775817511,
-        "duration" : 2
+        "start" : 1533577105276,
+        "stop" : 1533577105283,
+        "duration" : 7
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,11 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "stops video recording",
+      "name" : "uses passed options",
       "time" : {
-        "start" : 1532775817511,
-        "stop" : 1532775817513,
-        "duration" : 2
+        "start" : 1533577105284,
+        "stop" : 1533577105288,
+        "duration" : 4
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,11 +48,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "throws error if recording process was failed",
+      "name" : "throws error if ffmpeg wasn't found on windows",
       "time" : {
-        "start" : 1532775817514,
-        "stop" : 1532775817516,
-        "duration" : 2
+        "start" : 1533577105289,
+        "stop" : 1533577105292,
+        "duration" : 3
       },
       "status" : "passed",
       "steps" : [ ],
@@ -63,11 +63,26 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "throws error if recording process has failed exit code",
+      "name" : "throws error if neither ffmpeg nor avconv weren't found on linux",
       "time" : {
-        "start" : 1532775817516,
-        "stop" : 1532775817517,
-        "duration" : 1
+        "start" : 1533577105292,
+        "stop" : 1533577105295,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "throws error if os isn't supported",
+      "time" : {
+        "start" : 1533577105295,
+        "stop" : 1533577105297,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ ],
@@ -80,7 +95,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 4,
+    "stepsCount" : 5,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -94,7 +109,7 @@
     "value" : "Video"
   }, {
     "name" : "testMethod",
-    "value" : ".stop()"
+    "value" : ".configure()"
   }, {
     "name" : "package",
     "value" : "Video"
@@ -111,7 +126,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "b3c854fa1a8041e4.json",
+  "source" : "5bb6ad5d44c93b59.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

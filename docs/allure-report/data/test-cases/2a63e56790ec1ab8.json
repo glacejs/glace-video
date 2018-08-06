@@ -1,12 +1,12 @@
 {
-  "uid" : "376f3b49c4cd9ca8",
-  "name" : "contains",
-  "fullName" : "config.contains",
-  "historyId" : "46c34cb728b967dd1c433ac26f572939",
+  "uid" : "2a63e56790ec1ab8",
+  "name" : "._after()",
+  "fullName" : "fixtures.._after()",
+  "historyId" : "dbb68de51cc916200eadc733465ce9c5",
   "time" : {
-    "start" : 1532775817358,
-    "stop" : 1532775817366,
-    "duration" : 8
+    "start" : 1533577104922,
+    "stop" : 1533577104929,
+    "duration" : 7
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,10 +18,10 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "video section",
+      "name" : "skipped if video aren't captured",
       "time" : {
-        "start" : 1532775817362,
-        "stop" : 1532775817364,
+        "start" : 1533577104923,
+        "stop" : 1533577104925,
         "duration" : 2
       },
       "status" : "passed",
@@ -33,11 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "disabled video capture",
+      "name" : "stops video capture",
       "time" : {
-        "start" : 1532775817364,
-        "stop" : 1532775817365,
-        "duration" : 1
+        "start" : 1533577104925,
+        "stop" : 1533577104927,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,11 +48,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "disabled video save",
+      "name" : "removes captured video",
       "time" : {
-        "start" : 1532775817365,
-        "stop" : 1532775817365,
-        "duration" : 0
+        "start" : 1533577104927,
+        "stop" : 1533577104928,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -73,16 +73,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "config"
+    "value" : "fixtures"
   }, {
     "name" : "testClass",
-    "value" : "config"
+    "value" : "fixtures"
   }, {
     "name" : "testMethod",
-    "value" : "contains"
+    "value" : "._after()"
   }, {
     "name" : "package",
-    "value" : "config"
+    "value" : "fixtures"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -96,7 +96,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "376f3b49c4cd9ca8.json",
+  "source" : "2a63e56790ec1ab8.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

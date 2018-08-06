@@ -1,12 +1,12 @@
 {
-  "uid" : "a241c39f96135fb",
-  "name" : ".configure()",
-  "fullName" : "Video..configure()",
-  "historyId" : "890845d1d1f3904a26d33bfa94aae5ac",
+  "uid" : "378550ebeee34865",
+  "name" : "._videoLocation()",
+  "fullName" : "Steps.._videoLocation()",
+  "historyId" : "e78e6b1f6316d8916d2a2df72c683eaf",
   "time" : {
-    "start" : 1532775817498,
-    "stop" : 1532775817504,
-    "duration" : 6
+    "start" : 1533577105129,
+    "stop" : 1533577105165,
+    "duration" : 36
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,11 +18,11 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "uses default options",
+      "name" : "captures browser size if browser is launched",
       "time" : {
-        "start" : 1532775817498,
-        "stop" : 1532775817499,
-        "duration" : 1
+        "start" : 1533577105131,
+        "stop" : 1533577105142,
+        "duration" : 11
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,11 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "uses passed options",
+      "name" : "captures screen size if browser isn't launched",
       "time" : {
-        "start" : 1532775817499,
-        "stop" : 1532775817500,
-        "duration" : 1
+        "start" : 1533577105142,
+        "stop" : 1533577105149,
+        "duration" : 7
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,11 +48,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "throws error if ffmpeg wasn't found on windows",
+      "name" : "captures screen size if browser isn't init",
       "time" : {
-        "start" : 1532775817500,
-        "stop" : 1532775817501,
-        "duration" : 1
+        "start" : 1533577105150,
+        "stop" : 1533577105156,
+        "duration" : 6
       },
       "status" : "passed",
       "steps" : [ ],
@@ -63,26 +63,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "throws error if neither ffmpeg nor avconv weren't found on linux",
+      "name" : "throws error that browser out of screen",
       "time" : {
-        "start" : 1532775817501,
-        "stop" : 1532775817502,
-        "duration" : 1
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "throws error if os isn't supported",
-      "time" : {
-        "start" : 1532775817502,
-        "stop" : 1532775817503,
-        "duration" : 1
+        "start" : 1533577105157,
+        "stop" : 1533577105163,
+        "duration" : 6
       },
       "status" : "passed",
       "steps" : [ ],
@@ -95,7 +80,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 5,
+    "stepsCount" : 4,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -103,16 +88,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Video"
+    "value" : "Steps"
   }, {
     "name" : "testClass",
-    "value" : "Video"
+    "value" : "Steps"
   }, {
     "name" : "testMethod",
-    "value" : ".configure()"
+    "value" : "._videoLocation()"
   }, {
     "name" : "package",
-    "value" : "Video"
+    "value" : "Steps"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -126,7 +111,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "a241c39f96135fb.json",
+  "source" : "378550ebeee34865.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

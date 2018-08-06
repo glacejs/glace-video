@@ -1,12 +1,12 @@
 {
-  "uid" : "9f40973806f57ac9",
-  "name" : "._videoLocation()",
-  "fullName" : "Steps.._videoLocation()",
-  "historyId" : "e78e6b1f6316d8916d2a2df72c683eaf",
+  "uid" : "700425d355697683",
+  "name" : "Plugin lazy import",
+  "fullName" : "import.Plugin lazy import",
+  "historyId" : "195e12178d78f888191178bc67aeb146",
   "time" : {
-    "start" : 1532775817465,
-    "stop" : 1532775817476,
-    "duration" : 11
+    "start" : 1533577104938,
+    "stop" : 1533577104950,
+    "duration" : 12
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,40 +18,10 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "captures browser size if browser is launched",
+      "name" : "empty by default",
       "time" : {
-        "start" : 1532775817466,
-        "stop" : 1532775817469,
-        "duration" : 3
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "captures screen size if browser isn't launched",
-      "time" : {
-        "start" : 1532775817469,
-        "stop" : 1532775817472,
-        "duration" : 3
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "captures screen size if browser isn't init",
-      "time" : {
-        "start" : 1532775817472,
-        "stop" : 1532775817474,
+        "start" : 1533577104940,
+        "stop" : 1533577104942,
         "duration" : 2
       },
       "status" : "passed",
@@ -63,11 +33,56 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "throws error that browser out of screen",
+      "name" : "has config",
       "time" : {
-        "start" : 1532775817474,
-        "stop" : 1532775817476,
+        "start" : 1533577104942,
+        "stop" : 1533577104943,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "has globals",
+      "time" : {
+        "start" : 1533577104944,
+        "stop" : 1533577104945,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "has plugin help",
+      "time" : {
+        "start" : 1533577104945,
+        "stop" : 1533577104947,
         "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "has steps",
+      "time" : {
+        "start" : 1533577104947,
+        "stop" : 1533577104948,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -80,7 +95,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 4,
+    "stepsCount" : 5,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -88,16 +103,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Steps"
+    "value" : "import"
   }, {
     "name" : "testClass",
-    "value" : "Steps"
+    "value" : "import"
   }, {
     "name" : "testMethod",
-    "value" : "._videoLocation()"
+    "value" : "Plugin lazy import"
   }, {
     "name" : "package",
-    "value" : "Steps"
+    "value" : "import"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -111,7 +126,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "9f40973806f57ac9.json",
+  "source" : "700425d355697683.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

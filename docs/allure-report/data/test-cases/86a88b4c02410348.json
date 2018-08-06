@@ -1,12 +1,12 @@
 {
-  "uid" : "95070290fbad1bca",
+  "uid" : "86a88b4c02410348",
   "name" : ".removeVideo()",
   "fullName" : "Steps..removeVideo()",
   "historyId" : "954d52e047b44ae8d23026d3681888c6",
   "time" : {
-    "start" : 1532775817456,
-    "stop" : 1532775817465,
-    "duration" : 9
+    "start" : 1533577105089,
+    "stop" : 1533577105128,
+    "duration" : 39
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -20,9 +20,9 @@
     "steps" : [ {
       "name" : "skipped if video file isn't specified",
       "time" : {
-        "start" : 1532775817457,
-        "stop" : 1532775817458,
-        "duration" : 1
+        "start" : 1533577105092,
+        "stop" : 1533577105098,
+        "duration" : 6
       },
       "status" : "passed",
       "steps" : [ ],
@@ -35,9 +35,9 @@
     }, {
       "name" : "skipped if video file doesn't exist",
       "time" : {
-        "start" : 1532775817458,
-        "stop" : 1532775817459,
-        "duration" : 1
+        "start" : 1533577105098,
+        "stop" : 1533577105104,
+        "duration" : 6
       },
       "status" : "passed",
       "steps" : [ ],
@@ -50,17 +50,17 @@
     }, {
       "name" : "removes video file",
       "time" : {
-        "start" : 1532775817459,
-        "stop" : 1532775817462,
-        "duration" : 3
+        "start" : 1533577105105,
+        "stop" : 1533577105113,
+        "duration" : 8
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Remove recorded video",
         "time" : {
-          "start" : 1532775817461,
-          "stop" : 1532775817461,
-          "duration" : 0
+          "start" : 1533577105110,
+          "stop" : 1533577105111,
+          "duration" : 1
         },
         "status" : "passed",
         "steps" : [ ],
@@ -80,17 +80,17 @@
     }, {
       "name" : "doesn't check that file is removed if flag is set",
       "time" : {
-        "start" : 1532775817462,
-        "stop" : 1532775817463,
-        "duration" : 1
+        "start" : 1533577105113,
+        "stop" : 1533577105119,
+        "duration" : 6
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Remove recorded video",
         "time" : {
-          "start" : 1532775817463,
-          "stop" : 1532775817463,
-          "duration" : 0
+          "start" : 1533577105117,
+          "stop" : 1533577105118,
+          "duration" : 1
         },
         "status" : "passed",
         "steps" : [ ],
@@ -110,17 +110,17 @@
     }, {
       "name" : "throws error if file wasn't remove",
       "time" : {
-        "start" : 1532775817463,
-        "stop" : 1532775817464,
-        "duration" : 1
+        "start" : 1533577105119,
+        "stop" : 1533577105126,
+        "duration" : 7
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Remove recorded video",
         "time" : {
-          "start" : 1532775817464,
-          "stop" : 1532775817464,
-          "duration" : 0
+          "start" : 1533577105124,
+          "stop" : 1533577105126,
+          "duration" : 2
         },
         "status" : "passed",
         "steps" : [ ],
@@ -171,7 +171,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "95070290fbad1bca.json",
+  "source" : "86a88b4c02410348.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

@@ -1,12 +1,12 @@
 {
-  "uid" : "b4a561421b7afc3e",
+  "uid" : "b2d01e6888b9a097",
   "name" : ".start()",
   "fullName" : "Video..start()",
   "historyId" : "4b7bbb500c0a5b5734b438762a36a0d4",
   "time" : {
-    "start" : 1532775817504,
-    "stop" : 1532775817509,
-    "duration" : 5
+    "start" : 1533577105299,
+    "stop" : 1533577105312,
+    "duration" : 13
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -20,9 +20,9 @@
     "steps" : [ {
       "name" : "skipped if video recording is launched already",
       "time" : {
-        "start" : 1532775817505,
-        "stop" : 1532775817506,
-        "duration" : 1
+        "start" : 1533577105301,
+        "stop" : 1533577105303,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ ],
@@ -35,9 +35,9 @@
     }, {
       "name" : "throws if video recorder isn't configured",
       "time" : {
-        "start" : 1532775817506,
-        "stop" : 1532775817507,
-        "duration" : 1
+        "start" : 1533577105304,
+        "stop" : 1533577105307,
+        "duration" : 3
       },
       "status" : "passed",
       "steps" : [ ],
@@ -50,9 +50,9 @@
     }, {
       "name" : "starts video recording",
       "time" : {
-        "start" : 1532775817507,
-        "stop" : 1532775817508,
-        "duration" : 1
+        "start" : 1533577105307,
+        "stop" : 1533577105310,
+        "duration" : 3
       },
       "status" : "passed",
       "steps" : [ ],
@@ -96,7 +96,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "b4a561421b7afc3e.json",
+  "source" : "b2d01e6888b9a097.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

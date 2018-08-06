@@ -1,12 +1,12 @@
 {
-  "uid" : "65630aeb3d35e2c5",
+  "uid" : "be692f449f349836",
   "name" : ".startVideo()",
   "fullName" : "Steps..startVideo()",
   "historyId" : "3895a5e33854fc0c73fe76077e00c4a3",
   "time" : {
-    "start" : 1532775817421,
-    "stop" : 1532775817438,
-    "duration" : 17
+    "start" : 1533577104968,
+    "stop" : 1533577105012,
+    "duration" : 44
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -20,9 +20,9 @@
     "steps" : [ {
       "name" : "skipped if video capture is started already",
       "time" : {
-        "start" : 1532775817421,
-        "stop" : 1532775817424,
-        "duration" : 3
+        "start" : 1533577104970,
+        "stop" : 1533577104975,
+        "duration" : 5
       },
       "status" : "passed",
       "steps" : [ ],
@@ -35,17 +35,17 @@
     }, {
       "name" : "uses the_same recorder instance",
       "time" : {
-        "start" : 1532775817424,
-        "stop" : 1532775817427,
-        "duration" : 3
+        "start" : 1533577104975,
+        "stop" : 1533577104986,
+        "duration" : 11
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Record video to undefined",
         "time" : {
-          "start" : 1532775817426,
-          "stop" : 1532775817426,
-          "duration" : 0
+          "start" : 1533577104982,
+          "stop" : 1533577104983,
+          "duration" : 1
         },
         "status" : "passed",
         "steps" : [ ],
@@ -65,16 +65,16 @@
     }, {
       "name" : "uses the_new recorder instance",
       "time" : {
-        "start" : 1532775817428,
-        "stop" : 1532775817431,
-        "duration" : 3
+        "start" : 1533577104987,
+        "stop" : 1533577104994,
+        "duration" : 7
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Record video to undefined",
         "time" : {
-          "start" : 1532775817429,
-          "stop" : 1532775817430,
+          "start" : 1533577104991,
+          "stop" : 1533577104992,
           "duration" : 1
         },
         "status" : "passed",
@@ -95,16 +95,16 @@
     }, {
       "name" : "doesn't check that video is running if option is set",
       "time" : {
-        "start" : 1532775817431,
-        "stop" : 1532775817433,
-        "duration" : 2
+        "start" : 1533577104995,
+        "stop" : 1533577104999,
+        "duration" : 4
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Record video to undefined",
         "time" : {
-          "start" : 1532775817433,
-          "stop" : 1532775817433,
+          "start" : 1533577104998,
+          "stop" : 1533577104998,
           "duration" : 0
         },
         "status" : "passed",
@@ -125,17 +125,17 @@
     }, {
       "name" : "throws error if video capture isn't launched",
       "time" : {
-        "start" : 1532775817433,
-        "stop" : 1532775817437,
-        "duration" : 4
+        "start" : 1533577104999,
+        "stop" : 1533577105010,
+        "duration" : 11
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Record video to undefined",
         "time" : {
-          "start" : 1532775817435,
-          "stop" : 1532775817437,
-          "duration" : 2
+          "start" : 1533577105005,
+          "stop" : 1533577105010,
+          "duration" : 5
         },
         "status" : "passed",
         "steps" : [ ],
@@ -186,7 +186,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "65630aeb3d35e2c5.json",
+  "source" : "be692f449f349836.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

@@ -1,12 +1,12 @@
 {
-  "uid" : "38f8f735b61c7774",
+  "uid" : "c0deba572f55d650",
   "name" : ".stopVideo()",
   "fullName" : "Steps..stopVideo()",
   "historyId" : "5b1be86fadd5c888cb8b7c1b72b32782",
   "time" : {
-    "start" : 1532775817438,
-    "stop" : 1532775817447,
-    "duration" : 9
+    "start" : 1533577105013,
+    "stop" : 1533577105037,
+    "duration" : 24
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -20,9 +20,9 @@
     "steps" : [ {
       "name" : "skipped if video recording isnät launched",
       "time" : {
-        "start" : 1532775817439,
-        "stop" : 1532775817440,
-        "duration" : 1
+        "start" : 1533577105015,
+        "stop" : 1533577105020,
+        "duration" : 5
       },
       "status" : "passed",
       "steps" : [ ],
@@ -35,17 +35,17 @@
     }, {
       "name" : "stops video",
       "time" : {
-        "start" : 1532775817440,
-        "stop" : 1532775817442,
-        "duration" : 2
+        "start" : 1533577105021,
+        "stop" : 1533577105027,
+        "duration" : 6
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Stop video recording",
         "time" : {
-          "start" : 1532775817441,
-          "stop" : 1532775817441,
-          "duration" : 0
+          "start" : 1533577105025,
+          "stop" : 1533577105026,
+          "duration" : 1
         },
         "status" : "passed",
         "steps" : [ ],
@@ -65,16 +65,16 @@
     }, {
       "name" : "doesn't check video stop if flag is set",
       "time" : {
-        "start" : 1532775817442,
-        "stop" : 1532775817443,
-        "duration" : 1
+        "start" : 1533577105027,
+        "stop" : 1533577105031,
+        "duration" : 4
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Stop video recording",
         "time" : {
-          "start" : 1532775817442,
-          "stop" : 1532775817443,
+          "start" : 1533577105029,
+          "stop" : 1533577105030,
           "duration" : 1
         },
         "status" : "passed",
@@ -95,16 +95,16 @@
     }, {
       "name" : "throws error if video isn't stopped",
       "time" : {
-        "start" : 1532775817443,
-        "stop" : 1532775817446,
-        "duration" : 3
+        "start" : 1533577105031,
+        "stop" : 1533577105035,
+        "duration" : 4
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Stop video recording",
         "time" : {
-          "start" : 1532775817445,
-          "stop" : 1532775817446,
+          "start" : 1533577105034,
+          "stop" : 1533577105035,
           "duration" : 1
         },
         "status" : "passed",
@@ -156,7 +156,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "38f8f735b61c7774.json",
+  "source" : "c0deba572f55d650.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },
