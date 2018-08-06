@@ -1,3 +1,7 @@
+### v1.1.8
+
+- [Started](https://github.com/glacejs/glace-video/commit/828808b5bed17d57f0ed49366ccfd9c079ecc898) to support video capture on `macos`.
+
 ### v1.1.7
 
 - [Fixed](https://github.com/glacejs/glace-video/commit/ec9313f765bb2062e91358d3920db113391f8eed) bug that `forEachLanguage` iterator tried to process context instead of name.
