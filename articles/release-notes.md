@@ -1,3 +1,7 @@
+### v1.1.9
+
+- [Adapted](https://github.com/glacejs/glace-video/commit/074d89a0cc9597c9cecaccfdcd6e26c1d3933aae) for slaves mechanism.
+
 ### v1.1.8
 
 - [Started](https://github.com/glacejs/glace-video/commit/828808b5bed17d57f0ed49366ccfd9c079ecc898) to support video capture on `macos`.
