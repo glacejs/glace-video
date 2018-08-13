@@ -1,12 +1,12 @@
 {
-  "uid" : "378550ebeee34865",
-  "name" : "._videoLocation()",
-  "fullName" : "Steps.._videoLocation()",
-  "historyId" : "e78e6b1f6316d8916d2a2df72c683eaf",
+  "uid" : "c18b794d217c1c7d",
+  "name" : "Plugin lazy import",
+  "fullName" : "import.Plugin lazy import",
+  "historyId" : "195e12178d78f888191178bc67aeb146",
   "time" : {
-    "start" : 1533577105129,
-    "stop" : 1533577105165,
-    "duration" : 36
+    "start" : 1534182401330,
+    "stop" : 1534182401333,
+    "duration" : 3
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,11 +18,11 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "captures browser size if browser is launched",
+      "name" : "empty by default",
       "time" : {
-        "start" : 1533577105131,
-        "stop" : 1533577105142,
-        "duration" : 11
+        "start" : 1534182401331,
+        "stop" : 1534182401331,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,11 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "captures screen size if browser isn't launched",
+      "name" : "has config",
       "time" : {
-        "start" : 1533577105142,
-        "stop" : 1533577105149,
-        "duration" : 7
+        "start" : 1534182401332,
+        "stop" : 1534182401332,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,11 +48,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "captures screen size if browser isn't init",
+      "name" : "has globals",
       "time" : {
-        "start" : 1533577105150,
-        "stop" : 1533577105156,
-        "duration" : 6
+        "start" : 1534182401332,
+        "stop" : 1534182401332,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -63,11 +63,26 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "throws error that browser out of screen",
+      "name" : "has plugin help",
       "time" : {
-        "start" : 1533577105157,
-        "stop" : 1533577105163,
-        "duration" : 6
+        "start" : 1534182401332,
+        "stop" : 1534182401332,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "has steps",
+      "time" : {
+        "start" : 1534182401332,
+        "stop" : 1534182401333,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -80,7 +95,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 4,
+    "stepsCount" : 5,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -88,16 +103,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Steps"
+    "value" : "import"
   }, {
     "name" : "testClass",
-    "value" : "Steps"
+    "value" : "import"
   }, {
     "name" : "testMethod",
-    "value" : "._videoLocation()"
+    "value" : "Plugin lazy import"
   }, {
     "name" : "package",
-    "value" : "Steps"
+    "value" : "import"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -111,7 +126,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "378550ebeee34865.json",
+  "source" : "c18b794d217c1c7d.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

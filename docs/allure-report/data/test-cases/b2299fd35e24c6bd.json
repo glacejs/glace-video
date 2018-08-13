@@ -1,11 +1,11 @@
 {
-  "uid" : "313d92556c83a2b6",
+  "uid" : "b2299fd35e24c6bd",
   "name" : ".fxVideo()",
   "fullName" : "fixtures..fxVideo()",
   "historyId" : "f7e7ab5fe3d8c4372e841df722e1c4",
   "time" : {
-    "start" : 1533577104910,
-    "stop" : 1533577104916,
+    "start" : 1534182401310,
+    "stop" : 1534182401316,
     "duration" : 6
   },
   "description" : "",
@@ -20,8 +20,8 @@
     "steps" : [ {
       "name" : "in global context",
       "time" : {
-        "start" : 1533577104911,
-        "stop" : 1533577104914,
+        "start" : 1534182401311,
+        "stop" : 1534182401314,
         "duration" : 3
       },
       "status" : "passed",
@@ -35,8 +35,8 @@
     }, {
       "name" : "in custom context",
       "time" : {
-        "start" : 1533577104915,
-        "stop" : 1533577104916,
+        "start" : 1534182401315,
+        "stop" : 1534182401316,
         "duration" : 1
       },
       "status" : "passed",
@@ -81,7 +81,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "313d92556c83a2b6.json",
+  "source" : "b2299fd35e24c6bd.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

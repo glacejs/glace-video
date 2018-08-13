@@ -1,12 +1,12 @@
 {
-  "uid" : "7440ce113d03f6f5",
-  "name" : "contains",
-  "fullName" : "config.contains",
-  "historyId" : "46c34cb728b967dd1c433ac26f572939",
+  "uid" : "647172e965268967",
+  "name" : "._videoLocation()",
+  "fullName" : "Steps.._videoLocation()",
+  "historyId" : "e78e6b1f6316d8916d2a2df72c683eaf",
   "time" : {
-    "start" : 1533577104893,
-    "stop" : 1533577104902,
-    "duration" : 9
+    "start" : 1534182401373,
+    "stop" : 1534182401380,
+    "duration" : 7
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,10 +18,25 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "video section",
+      "name" : "captures browser size if browser is launched",
       "time" : {
-        "start" : 1533577104898,
-        "stop" : 1533577104899,
+        "start" : 1534182401373,
+        "stop" : 1534182401375,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "captures screen size if browser isn't launched",
+      "time" : {
+        "start" : 1534182401375,
+        "stop" : 1534182401376,
         "duration" : 1
       },
       "status" : "passed",
@@ -33,11 +48,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "disabled video capture",
+      "name" : "captures screen size if browser isn't init",
       "time" : {
-        "start" : 1533577104900,
-        "stop" : 1533577104900,
-        "duration" : 0
+        "start" : 1534182401377,
+        "stop" : 1534182401378,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,11 +63,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "disabled video save",
+      "name" : "throws error that browser out of screen",
       "time" : {
-        "start" : 1533577104900,
-        "stop" : 1533577104901,
-        "duration" : 1
+        "start" : 1534182401378,
+        "stop" : 1534182401380,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ ],
@@ -65,7 +80,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
+    "stepsCount" : 4,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -73,16 +88,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "config"
+    "value" : "Steps"
   }, {
     "name" : "testClass",
-    "value" : "config"
+    "value" : "Steps"
   }, {
     "name" : "testMethod",
-    "value" : "contains"
+    "value" : "._videoLocation()"
   }, {
     "name" : "package",
-    "value" : "config"
+    "value" : "Steps"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -96,7 +111,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "7440ce113d03f6f5.json",
+  "source" : "647172e965268967.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

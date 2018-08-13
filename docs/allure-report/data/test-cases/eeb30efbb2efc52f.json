@@ -1,12 +1,12 @@
 {
-  "uid" : "700425d355697683",
-  "name" : "Plugin lazy import",
-  "fullName" : "import.Plugin lazy import",
-  "historyId" : "195e12178d78f888191178bc67aeb146",
+  "uid" : "eeb30efbb2efc52f",
+  "name" : ".configure()",
+  "fullName" : "Video..configure()",
+  "historyId" : "890845d1d1f3904a26d33bfa94aae5ac",
   "time" : {
-    "start" : 1533577104938,
-    "stop" : 1533577104950,
-    "duration" : 12
+    "start" : 1534182401400,
+    "stop" : 1534182401405,
+    "duration" : 5
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,25 +18,10 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "empty by default",
+      "name" : "uses default options",
       "time" : {
-        "start" : 1533577104940,
-        "stop" : 1533577104942,
-        "duration" : 2
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "has config",
-      "time" : {
-        "start" : 1533577104942,
-        "stop" : 1533577104943,
+        "start" : 1534182401400,
+        "stop" : 1534182401401,
         "duration" : 1
       },
       "status" : "passed",
@@ -48,10 +33,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "has globals",
+      "name" : "uses passed options",
       "time" : {
-        "start" : 1533577104944,
-        "stop" : 1533577104945,
+        "start" : 1534182401401,
+        "stop" : 1534182401402,
         "duration" : 1
       },
       "status" : "passed",
@@ -63,11 +48,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "has plugin help",
+      "name" : "throws error if ffmpeg wasn't found on windows",
       "time" : {
-        "start" : 1533577104945,
-        "stop" : 1533577104947,
-        "duration" : 2
+        "start" : 1534182401402,
+        "stop" : 1534182401403,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -78,11 +63,26 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "has steps",
+      "name" : "throws error if neither ffmpeg nor avconv weren't found on linux",
       "time" : {
-        "start" : 1533577104947,
-        "stop" : 1533577104948,
+        "start" : 1534182401403,
+        "stop" : 1534182401404,
         "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "throws error if os isn't supported",
+      "time" : {
+        "start" : 1534182401404,
+        "stop" : 1534182401404,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -103,16 +103,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "import"
+    "value" : "Video"
   }, {
     "name" : "testClass",
-    "value" : "import"
+    "value" : "Video"
   }, {
     "name" : "testMethod",
-    "value" : "Plugin lazy import"
+    "value" : ".configure()"
   }, {
     "name" : "package",
-    "value" : "import"
+    "value" : "Video"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -126,7 +126,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "700425d355697683.json",
+  "source" : "eeb30efbb2efc52f.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

@@ -1,12 +1,12 @@
 {
-  "uid" : "5346961294ed18f9",
-  "name" : ".stop()",
-  "fullName" : "Video..stop()",
-  "historyId" : "e250f1cba3beaaa28198b23cb6a98014",
+  "uid" : "d26338b4725e27b8",
+  "name" : ".start()",
+  "fullName" : "Video..start()",
+  "historyId" : "4b7bbb500c0a5b5734b438762a36a0d4",
   "time" : {
-    "start" : 1533577105313,
-    "stop" : 1533577105343,
-    "duration" : 30
+    "start" : 1534182401405,
+    "stop" : 1534182401407,
+    "duration" : 2
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,11 +18,11 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "skipped if video recording isn't launched yet",
+      "name" : "skipped if video recording is launched already",
       "time" : {
-        "start" : 1533577105315,
-        "stop" : 1533577105319,
-        "duration" : 4
+        "start" : 1534182401405,
+        "stop" : 1534182401406,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,11 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "stops video recording",
+      "name" : "throws if video recorder isn't configured",
       "time" : {
-        "start" : 1533577105320,
-        "stop" : 1533577105327,
-        "duration" : 7
+        "start" : 1534182401406,
+        "stop" : 1534182401406,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,26 +48,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "throws error if recording process was failed",
+      "name" : "starts video recording",
       "time" : {
-        "start" : 1533577105328,
-        "stop" : 1533577105335,
-        "duration" : 7
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "throws error if recording process has failed exit code",
-      "time" : {
-        "start" : 1533577105336,
-        "stop" : 1533577105341,
-        "duration" : 5
+        "start" : 1534182401407,
+        "stop" : 1534182401407,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -80,7 +65,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 4,
+    "stepsCount" : 3,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -94,7 +79,7 @@
     "value" : "Video"
   }, {
     "name" : "testMethod",
-    "value" : ".stop()"
+    "value" : ".start()"
   }, {
     "name" : "package",
     "value" : "Video"
@@ -111,7 +96,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "5346961294ed18f9.json",
+  "source" : "d26338b4725e27b8.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

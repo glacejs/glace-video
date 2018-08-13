@@ -1,12 +1,12 @@
 {
-  "uid" : "8ad44da63aa8c7b9",
-  "name" : "plugin help contains option",
-  "fullName" : "help.plugin help contains option",
-  "historyId" : "90b09b96ad85837f7dbc21b0069b3afc",
+  "uid" : "77796b8830c24102",
+  "name" : "instance",
+  "fullName" : "Video.instance",
+  "historyId" : "b6656ec9020e5e58c8f13af4e97539d2",
   "time" : {
-    "start" : 1533577104958,
-    "stop" : 1533577104962,
-    "duration" : 4
+    "start" : 1534182401397,
+    "stop" : 1534182401399,
+    "duration" : 2
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,10 +18,10 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "video",
+      "name" : "not running",
       "time" : {
-        "start" : 1533577104959,
-        "stop" : 1533577104960,
+        "start" : 1534182401398,
+        "stop" : 1534182401399,
         "duration" : 1
       },
       "status" : "passed",
@@ -33,10 +33,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "video-save",
+      "name" : "doesn't have file path",
       "time" : {
-        "start" : 1533577104961,
-        "stop" : 1533577104961,
+        "start" : 1534182401399,
+        "stop" : 1534182401399,
         "duration" : 0
       },
       "status" : "passed",
@@ -58,16 +58,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "help"
+    "value" : "Video"
   }, {
     "name" : "testClass",
-    "value" : "help"
+    "value" : "Video"
   }, {
     "name" : "testMethod",
-    "value" : "plugin help contains option"
+    "value" : "instance"
   }, {
     "name" : "package",
-    "value" : "help"
+    "value" : "Video"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -81,7 +81,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "8ad44da63aa8c7b9.json",
+  "source" : "77796b8830c24102.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

@@ -1,12 +1,12 @@
 {
-  "uid" : "5bb6ad5d44c93b59",
-  "name" : ".configure()",
-  "fullName" : "Video..configure()",
-  "historyId" : "890845d1d1f3904a26d33bfa94aae5ac",
+  "uid" : "c1e7a3c5655db95d",
+  "name" : "._after()",
+  "fullName" : "fixtures.._after()",
+  "historyId" : "dbb68de51cc916200eadc733465ce9c5",
   "time" : {
-    "start" : 1533577105274,
-    "stop" : 1533577105298,
-    "duration" : 24
+    "start" : 1534182401322,
+    "stop" : 1534182401327,
+    "duration" : 5
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,71 +18,41 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "uses default options",
+      "name" : "skipped if video aren't captured",
       "time" : {
-        "start" : 1533577105276,
-        "stop" : 1533577105283,
-        "duration" : 7
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "uses passed options",
-      "time" : {
-        "start" : 1533577105284,
-        "stop" : 1533577105288,
-        "duration" : 4
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "throws error if ffmpeg wasn't found on windows",
-      "time" : {
-        "start" : 1533577105289,
-        "stop" : 1533577105292,
-        "duration" : 3
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "throws error if neither ffmpeg nor avconv weren't found on linux",
-      "time" : {
-        "start" : 1533577105292,
-        "stop" : 1533577105295,
-        "duration" : 3
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "throws error if os isn't supported",
-      "time" : {
-        "start" : 1533577105295,
-        "stop" : 1533577105297,
+        "start" : 1534182401322,
+        "stop" : 1534182401324,
         "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "stops video capture",
+      "time" : {
+        "start" : 1534182401324,
+        "stop" : 1534182401326,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "removes captured video",
+      "time" : {
+        "start" : 1534182401326,
+        "stop" : 1534182401327,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -95,7 +65,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 5,
+    "stepsCount" : 3,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -103,16 +73,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Video"
+    "value" : "fixtures"
   }, {
     "name" : "testClass",
-    "value" : "Video"
+    "value" : "fixtures"
   }, {
     "name" : "testMethod",
-    "value" : ".configure()"
+    "value" : "._after()"
   }, {
     "name" : "package",
-    "value" : "Video"
+    "value" : "fixtures"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -126,7 +96,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "5bb6ad5d44c93b59.json",
+  "source" : "c1e7a3c5655db95d.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

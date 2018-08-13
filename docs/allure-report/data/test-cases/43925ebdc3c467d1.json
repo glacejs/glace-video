@@ -1,12 +1,12 @@
 {
-  "uid" : "b2d01e6888b9a097",
-  "name" : ".start()",
-  "fullName" : "Video..start()",
-  "historyId" : "4b7bbb500c0a5b5734b438762a36a0d4",
+  "uid" : "43925ebdc3c467d1",
+  "name" : "._makeVideoPath()",
+  "fullName" : "Steps.._makeVideoPath()",
+  "historyId" : "ff973880a99d71efea23ddae987b2e3a",
   "time" : {
-    "start" : 1533577105299,
-    "stop" : 1533577105312,
-    "duration" : 13
+    "start" : 1534182401381,
+    "stop" : 1534182401387,
+    "duration" : 6
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,10 +18,10 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "skipped if video recording is launched already",
+      "name" : "generates new file name",
       "time" : {
-        "start" : 1533577105301,
-        "stop" : 1533577105303,
+        "start" : 1534182401381,
+        "stop" : 1534182401383,
         "duration" : 2
       },
       "status" : "passed",
@@ -33,11 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "throws if video recorder isn't configured",
+      "name" : "transforms to kebab file name 'it's my file name'",
       "time" : {
-        "start" : 1533577105304,
-        "stop" : 1533577105307,
-        "duration" : 3
+        "start" : 1534182401383,
+        "stop" : 1534182401384,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,11 +48,26 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "starts video recording",
+      "name" : "transforms to kebab file name 'it's my file name.avi'",
       "time" : {
-        "start" : 1533577105307,
-        "stop" : 1533577105310,
-        "duration" : 3
+        "start" : 1534182401384,
+        "stop" : 1534182401385,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "uses passed folder path",
+      "time" : {
+        "start" : 1534182401386,
+        "stop" : 1534182401387,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -65,7 +80,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
+    "stepsCount" : 4,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -73,16 +88,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Video"
+    "value" : "Steps"
   }, {
     "name" : "testClass",
-    "value" : "Video"
+    "value" : "Steps"
   }, {
     "name" : "testMethod",
-    "value" : ".start()"
+    "value" : "._makeVideoPath()"
   }, {
     "name" : "package",
-    "value" : "Video"
+    "value" : "Steps"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -96,7 +111,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "b2d01e6888b9a097.json",
+  "source" : "43925ebdc3c467d1.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

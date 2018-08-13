@@ -1,12 +1,12 @@
 {
-  "uid" : "2a63e56790ec1ab8",
-  "name" : "._after()",
-  "fullName" : "fixtures.._after()",
-  "historyId" : "dbb68de51cc916200eadc733465ce9c5",
+  "uid" : "54754b06597c6afd",
+  "name" : "._before()",
+  "fullName" : "fixtures.._before()",
+  "historyId" : "43647fe90fc500240d3f9f945f0a7b71",
   "time" : {
-    "start" : 1533577104922,
-    "stop" : 1533577104929,
-    "duration" : 7
+    "start" : 1534182401317,
+    "stop" : 1534182401322,
+    "duration" : 5
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,41 +18,11 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "skipped if video aren't captured",
+      "name" : "",
       "time" : {
-        "start" : 1533577104923,
-        "stop" : 1533577104925,
-        "duration" : 2
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "stops video capture",
-      "time" : {
-        "start" : 1533577104925,
-        "stop" : 1533577104927,
-        "duration" : 2
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "removes captured video",
-      "time" : {
-        "start" : 1533577104927,
-        "stop" : 1533577104928,
-        "duration" : 1
+        "start" : 1534182401317,
+        "stop" : 1534182401321,
+        "duration" : 4
       },
       "status" : "passed",
       "steps" : [ ],
@@ -65,7 +35,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
+    "stepsCount" : 1,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -79,7 +49,7 @@
     "value" : "fixtures"
   }, {
     "name" : "testMethod",
-    "value" : "._after()"
+    "value" : "._before()"
   }, {
     "name" : "package",
     "value" : "fixtures"
@@ -96,7 +66,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "2a63e56790ec1ab8.json",
+  "source" : "54754b06597c6afd.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },
