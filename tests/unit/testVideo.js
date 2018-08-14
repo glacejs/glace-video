@@ -120,23 +120,23 @@ suite("Video", () => {
         });
 
         chunk("stops video recording", async () => {
-            video._process.on = sinon.spy((ev, cb) => {
+            video._process.once = sinon.spy((ev, cb) => {
                 if (ev === "exit") cb();
             });
             await expect(video.stop()).to.be.fulfilled;
-            expect(video._process.on.calledTwice).to.be.true;
+            expect(video._process.once.calledTwice).to.be.true;
         });
 
         chunk("throws error if recording process was failed", async () => {
-            video._process.on = sinon.spy((ev, cb) => {
+            video._process.once = sinon.spy((ev, cb) => {
                 if (ev === "error") cb(new Error("process error"));
             });
             await expect(video.stop()).to.be.rejectedWith("process error");
-            expect(video._process.on.calledTwice).to.be.true;
+            expect(video._process.once.calledTwice).to.be.true;
         });
 
         chunk("throws error if recording process has failed exit code", async () => {
-            video._process.on = sinon.spy();
+            video._process.once = sinon.spy();
             video._process.kill = sinon.stub().returns(false);
             await expect(video.stop()).to.be.rejectedWith("Oops! Can't kill");
             expect(video._process.kill.calledOnce).to.be.true;
