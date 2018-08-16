@@ -1,12 +1,12 @@
 {
-  "uid" : "c1e7a3c5655db95d",
-  "name" : "._after()",
-  "fullName" : "fixtures.._after()",
-  "historyId" : "dbb68de51cc916200eadc733465ce9c5",
+  "uid" : "f40ccc2390d0c185",
+  "name" : ".configure()",
+  "fullName" : "Video..configure()",
+  "historyId" : "890845d1d1f3904a26d33bfa94aae5ac",
   "time" : {
-    "start" : 1534182401322,
-    "stop" : 1534182401327,
-    "duration" : 5
+    "start" : 1534441849553,
+    "stop" : 1534441849562,
+    "duration" : 9
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,10 +18,10 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "skipped if video aren't captured",
+      "name" : "uses default options",
       "time" : {
-        "start" : 1534182401322,
-        "stop" : 1534182401324,
+        "start" : 1534441849554,
+        "stop" : 1534441849556,
         "duration" : 2
       },
       "status" : "passed",
@@ -33,10 +33,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "stops video capture",
+      "name" : "uses passed options",
       "time" : {
-        "start" : 1534182401324,
-        "stop" : 1534182401326,
+        "start" : 1534441849556,
+        "stop" : 1534441849558,
         "duration" : 2
       },
       "status" : "passed",
@@ -48,10 +48,40 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "removes captured video",
+      "name" : "throws error if ffmpeg wasn't found on windows",
       "time" : {
-        "start" : 1534182401326,
-        "stop" : 1534182401327,
+        "start" : 1534441849558,
+        "stop" : 1534441849559,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "throws error if neither ffmpeg nor avconv weren't found on linux",
+      "time" : {
+        "start" : 1534441849559,
+        "stop" : 1534441849560,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "throws error if os isn't supported",
+      "time" : {
+        "start" : 1534441849561,
+        "stop" : 1534441849562,
         "duration" : 1
       },
       "status" : "passed",
@@ -65,7 +95,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
+    "stepsCount" : 5,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -73,16 +103,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "fixtures"
+    "value" : "Video"
   }, {
     "name" : "testClass",
-    "value" : "fixtures"
+    "value" : "Video"
   }, {
     "name" : "testMethod",
-    "value" : "._after()"
+    "value" : ".configure()"
   }, {
     "name" : "package",
-    "value" : "fixtures"
+    "value" : "Video"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -96,7 +126,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c1e7a3c5655db95d.json",
+  "source" : "f40ccc2390d0c185.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

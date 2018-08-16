@@ -1,12 +1,12 @@
 {
-  "uid" : "9afad85f595bea97",
+  "uid" : "9b762dcd9f939cbc",
   "name" : "Record video of browser",
   "fullName" : "e2e tests.Record video of browser",
   "historyId" : "f683d68de49d93756f321d69d820856c",
   "time" : {
-    "start" : 1534182409551,
-    "stop" : 1534182432188,
-    "duration" : 22637
+    "start" : 1534441857355,
+    "stop" : 1534441873266,
+    "duration" : 15911
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,11 +18,11 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Start selenium server",
+      "name" : "Start selenium server on port 33698",
       "time" : {
-        "start" : 1534182409712,
-        "stop" : 1534182415065,
-        "duration" : 5353
+        "start" : 1534441857404,
+        "stop" : 1534441858912,
+        "duration" : 1508
       },
       "status" : "passed",
       "steps" : [ ],
@@ -35,9 +35,9 @@
     }, {
       "name" : "Launch browser via selenium",
       "time" : {
-        "start" : 1534182415070,
-        "stop" : 1534182423372,
-        "duration" : 8302
+        "start" : 1534441858917,
+        "stop" : 1534441864600,
+        "duration" : 5683
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,19 +48,19 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Record video to /home/user/vega/projects/glace/glace-video/report/tests/record-video-of-browser/videos/c1264b39-457c-4886-a064-59874dda6819.avi",
+      "name" : "Record video to /home/user/vega/projects/glace/glace-video/report/tests/record-video-of-browser/videos/7c23f40a-bb28-4ddf-9d59-c3ab1fddfc7d.avi",
       "time" : {
-        "start" : 1534182423391,
-        "stop" : 1534182424401,
-        "duration" : 1010
+        "start" : 1534441864615,
+        "stop" : 1534441865626,
+        "duration" : 1011
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Sleep 1 sec because it needs a time to start recording",
         "time" : {
-          "start" : 1534182423400,
-          "stop" : 1534182424401,
-          "duration" : 1001
+          "start" : 1534441864625,
+          "stop" : 1534441865625,
+          "duration" : 1000
         },
         "status" : "passed",
         "steps" : [ ],
@@ -80,16 +80,16 @@
     }, {
       "name" : "",
       "time" : {
-        "start" : 1534182424401,
-        "stop" : 1534182429405,
+        "start" : 1534441865626,
+        "stop" : 1534441870630,
         "duration" : 5004
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Get video file",
         "time" : {
-          "start" : 1534182424402,
-          "stop" : 1534182424402,
+          "start" : 1534441865626,
+          "stop" : 1534441865626,
           "duration" : 0
         },
         "status" : "passed",
@@ -103,8 +103,8 @@
       }, {
         "name" : "Sleep 5 sec because just pause",
         "time" : {
-          "start" : 1534182424402,
-          "stop" : 1534182429405,
+          "start" : 1534441865627,
+          "stop" : 1534441870630,
           "duration" : 5003
         },
         "status" : "passed",
@@ -125,17 +125,17 @@
     }, {
       "name" : "Stop video recording",
       "time" : {
-        "start" : 1534182429405,
-        "stop" : 1534182430801,
-        "duration" : 1396
+        "start" : 1534441870631,
+        "stop" : 1534441871862,
+        "duration" : 1231
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Sleep 1 sec because it needs a time to gather latest frames",
         "time" : {
-          "start" : 1534182429405,
-          "stop" : 1534182430407,
-          "duration" : 1002
+          "start" : 1534441870631,
+          "stop" : 1534441871632,
+          "duration" : 1001
         },
         "status" : "passed",
         "steps" : [ ],
@@ -155,9 +155,9 @@
     }, {
       "name" : "Remove recorded video",
       "time" : {
-        "start" : 1534182430801,
-        "stop" : 1534182430801,
-        "duration" : 0
+        "start" : 1534441871862,
+        "stop" : 1534441871863,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -170,16 +170,16 @@
     }, {
       "name" : "Close browser",
       "time" : {
-        "start" : 1534182430801,
-        "stop" : 1534182431860,
-        "duration" : 1059
+        "start" : 1534441871863,
+        "stop" : 1534441872927,
+        "duration" : 1064
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Sleep 1 sec because webdriver process will be stopped",
         "time" : {
-          "start" : 1534182430857,
-          "stop" : 1534182431858,
+          "start" : 1534441871924,
+          "stop" : 1534441872925,
           "duration" : 1001
         },
         "status" : "passed",
@@ -200,9 +200,9 @@
     }, {
       "name" : "Stop selenium server",
       "time" : {
-        "start" : 1534182431861,
-        "stop" : 1534182432187,
-        "duration" : 326
+        "start" : 1534441872927,
+        "stop" : 1534441873266,
+        "duration" : 339
       },
       "status" : "passed",
       "steps" : [ ],
@@ -246,7 +246,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "9afad85f595bea97.json",
+  "source" : "9b762dcd9f939cbc.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

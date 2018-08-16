@@ -1,12 +1,12 @@
 {
-  "uid" : "54754b06597c6afd",
-  "name" : "._before()",
-  "fullName" : "fixtures.._before()",
-  "historyId" : "43647fe90fc500240d3f9f945f0a7b71",
+  "uid" : "cd58f37e3103a64d",
+  "name" : "plugin help contains option",
+  "fullName" : "help.plugin help contains option",
+  "historyId" : "90b09b96ad85837f7dbc21b0069b3afc",
   "time" : {
-    "start" : 1534182401317,
-    "stop" : 1534182401322,
-    "duration" : 5
+    "start" : 1534441849464,
+    "stop" : 1534441849466,
+    "duration" : 2
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,11 +18,26 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "",
+      "name" : "video",
       "time" : {
-        "start" : 1534182401317,
-        "stop" : 1534182401321,
-        "duration" : 4
+        "start" : 1534441849465,
+        "stop" : 1534441849465,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "video-save",
+      "time" : {
+        "start" : 1534441849465,
+        "stop" : 1534441849465,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -35,7 +50,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 1,
+    "stepsCount" : 2,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -43,16 +58,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "fixtures"
+    "value" : "help"
   }, {
     "name" : "testClass",
-    "value" : "fixtures"
+    "value" : "help"
   }, {
     "name" : "testMethod",
-    "value" : "._before()"
+    "value" : "plugin help contains option"
   }, {
     "name" : "package",
-    "value" : "fixtures"
+    "value" : "help"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -66,7 +81,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "54754b06597c6afd.json",
+  "source" : "cd58f37e3103a64d.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

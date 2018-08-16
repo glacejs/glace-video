@@ -1,12 +1,12 @@
 {
-  "uid" : "410cfba53177185b",
-  "name" : ".startVideo()",
-  "fullName" : "Steps..startVideo()",
-  "historyId" : "3895a5e33854fc0c73fe76077e00c4a3",
+  "uid" : "45492768be67cfc8",
+  "name" : ".stopVideo()",
+  "fullName" : "Steps..stopVideo()",
+  "historyId" : "5b1be86fadd5c888cb8b7c1b72b32782",
   "time" : {
-    "start" : 1534182401339,
-    "stop" : 1534182401350,
-    "duration" : 11
+    "start" : 1534441849484,
+    "stop" : 1534441849492,
+    "duration" : 8
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,11 +18,11 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "skipped if video capture is started already",
+      "name" : "skipped if video recording isnät launched",
       "time" : {
-        "start" : 1534182401340,
-        "stop" : 1534182401341,
-        "duration" : 1
+        "start" : 1534441849484,
+        "stop" : 1534441849486,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,48 +33,18 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "uses the_same recorder instance",
+      "name" : "stops video",
       "time" : {
-        "start" : 1534182401341,
-        "stop" : 1534182401343,
+        "start" : 1534441849486,
+        "stop" : 1534441849488,
         "duration" : 2
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "Record video to undefined",
+        "name" : "Stop video recording",
         "time" : {
-          "start" : 1534182401342,
-          "stop" : 1534182401343,
-          "duration" : 1
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "hasContent" : false
-      } ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 1,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : true
-    }, {
-      "name" : "uses the_new recorder instance",
-      "time" : {
-        "start" : 1534182401343,
-        "stop" : 1534182401345,
-        "duration" : 2
-      },
-      "status" : "passed",
-      "steps" : [ {
-        "name" : "Record video to undefined",
-        "time" : {
-          "start" : 1534182401344,
-          "stop" : 1534182401344,
+          "start" : 1534441849487,
+          "stop" : 1534441849487,
           "duration" : 0
         },
         "status" : "passed",
@@ -93,18 +63,18 @@
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "doesn't check that video is running if option is set",
+      "name" : "doesn't check video stop if flag is set",
       "time" : {
-        "start" : 1534182401345,
-        "stop" : 1534182401347,
+        "start" : 1534441849488,
+        "stop" : 1534441849490,
         "duration" : 2
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "Record video to undefined",
+        "name" : "Stop video recording",
         "time" : {
-          "start" : 1534182401346,
-          "stop" : 1534182401346,
+          "start" : 1534441849489,
+          "stop" : 1534441849489,
           "duration" : 0
         },
         "status" : "passed",
@@ -123,19 +93,19 @@
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "throws error if video capture isn't launched",
+      "name" : "throws error if video isn't stopped",
       "time" : {
-        "start" : 1534182401347,
-        "stop" : 1534182401349,
-        "duration" : 2
+        "start" : 1534441849490,
+        "stop" : 1534441849491,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "Record video to undefined",
+        "name" : "Stop video recording",
         "time" : {
-          "start" : 1534182401348,
-          "stop" : 1534182401349,
-          "duration" : 1
+          "start" : 1534441849491,
+          "stop" : 1534441849491,
+          "duration" : 0
         },
         "status" : "passed",
         "steps" : [ ],
@@ -155,7 +125,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 9,
+    "stepsCount" : 7,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -169,7 +139,7 @@
     "value" : "Steps"
   }, {
     "name" : "testMethod",
-    "value" : ".startVideo()"
+    "value" : ".stopVideo()"
   }, {
     "name" : "package",
     "value" : "Steps"
@@ -186,7 +156,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "410cfba53177185b.json",
+  "source" : "45492768be67cfc8.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

@@ -1,12 +1,12 @@
 {
-  "uid" : "647172e965268967",
-  "name" : "._videoLocation()",
-  "fullName" : "Steps.._videoLocation()",
-  "historyId" : "e78e6b1f6316d8916d2a2df72c683eaf",
+  "uid" : "3a923fd80be35636",
+  "name" : "._makeVideoPath()",
+  "fullName" : "Steps.._makeVideoPath()",
+  "historyId" : "ff973880a99d71efea23ddae987b2e3a",
   "time" : {
-    "start" : 1534182401373,
-    "stop" : 1534182401380,
-    "duration" : 7
+    "start" : 1534441849524,
+    "stop" : 1534441849532,
+    "duration" : 8
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,10 +18,10 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "captures browser size if browser is launched",
+      "name" : "generates new file name",
       "time" : {
-        "start" : 1534182401373,
-        "stop" : 1534182401375,
+        "start" : 1534441849525,
+        "stop" : 1534441849527,
         "duration" : 2
       },
       "status" : "passed",
@@ -33,10 +33,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "captures screen size if browser isn't launched",
+      "name" : "transforms to kebab file name 'it's my file name'",
       "time" : {
-        "start" : 1534182401375,
-        "stop" : 1534182401376,
+        "start" : 1534441849527,
+        "stop" : 1534441849528,
         "duration" : 1
       },
       "status" : "passed",
@@ -48,26 +48,26 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "captures screen size if browser isn't init",
+      "name" : "transforms to kebab file name 'it's my file name.avi'",
       "time" : {
-        "start" : 1534182401377,
-        "stop" : 1534182401378,
-        "duration" : 1
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "throws error that browser out of screen",
-      "time" : {
-        "start" : 1534182401378,
-        "stop" : 1534182401380,
+        "start" : 1534441849528,
+        "stop" : 1534441849530,
         "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "uses passed folder path",
+      "time" : {
+        "start" : 1534441849530,
+        "stop" : 1534441849531,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -94,7 +94,7 @@
     "value" : "Steps"
   }, {
     "name" : "testMethod",
-    "value" : "._videoLocation()"
+    "value" : "._makeVideoPath()"
   }, {
     "name" : "package",
     "value" : "Steps"
@@ -111,7 +111,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "647172e965268967.json",
+  "source" : "3a923fd80be35636.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

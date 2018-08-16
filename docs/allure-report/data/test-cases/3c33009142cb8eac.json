@@ -1,12 +1,12 @@
 {
-  "uid" : "c18b794d217c1c7d",
-  "name" : "Plugin lazy import",
-  "fullName" : "import.Plugin lazy import",
-  "historyId" : "195e12178d78f888191178bc67aeb146",
+  "uid" : "3c33009142cb8eac",
+  "name" : ".stop()",
+  "fullName" : "Video..stop()",
+  "historyId" : "e250f1cba3beaaa28198b23cb6a98014",
   "time" : {
-    "start" : 1534182401330,
-    "stop" : 1534182401333,
-    "duration" : 3
+    "start" : 1534441849571,
+    "stop" : 1534441849579,
+    "duration" : 8
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,71 +18,56 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "empty by default",
+      "name" : "skipped if video recording isn't launched yet",
       "time" : {
-        "start" : 1534182401331,
-        "stop" : 1534182401331,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "has config",
-      "time" : {
-        "start" : 1534182401332,
-        "stop" : 1534182401332,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "has globals",
-      "time" : {
-        "start" : 1534182401332,
-        "stop" : 1534182401332,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "has plugin help",
-      "time" : {
-        "start" : 1534182401332,
-        "stop" : 1534182401332,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "has steps",
-      "time" : {
-        "start" : 1534182401332,
-        "stop" : 1534182401333,
+        "start" : 1534441849572,
+        "stop" : 1534441849573,
         "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "stops video recording",
+      "time" : {
+        "start" : 1534441849573,
+        "stop" : 1534441849575,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "throws error if recording process was failed",
+      "time" : {
+        "start" : 1534441849575,
+        "stop" : 1534441849577,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "throws error if recording process has failed exit code",
+      "time" : {
+        "start" : 1534441849577,
+        "stop" : 1534441849579,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ ],
@@ -95,7 +80,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 5,
+    "stepsCount" : 4,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -103,16 +88,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "import"
+    "value" : "Video"
   }, {
     "name" : "testClass",
-    "value" : "import"
+    "value" : "Video"
   }, {
     "name" : "testMethod",
-    "value" : "Plugin lazy import"
+    "value" : ".stop()"
   }, {
     "name" : "package",
-    "value" : "import"
+    "value" : "Video"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -126,7 +111,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c18b794d217c1c7d.json",
+  "source" : "3c33009142cb8eac.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

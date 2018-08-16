@@ -1,12 +1,12 @@
 {
-  "uid" : "8efe29676112031e",
-  "name" : "plugin help contains option",
-  "fullName" : "help.plugin help contains option",
-  "historyId" : "90b09b96ad85837f7dbc21b0069b3afc",
+  "uid" : "77beda883b6dad93",
+  "name" : "._after()",
+  "fullName" : "fixtures.._after()",
+  "historyId" : "dbb68de51cc916200eadc733465ce9c5",
   "time" : {
-    "start" : 1534182401336,
-    "stop" : 1534182401337,
-    "duration" : 1
+    "start" : 1534441849444,
+    "stop" : 1534441849452,
+    "duration" : 8
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,11 +18,11 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "video",
+      "name" : "skipped if video aren't captured",
       "time" : {
-        "start" : 1534182401336,
-        "stop" : 1534182401337,
-        "duration" : 1
+        "start" : 1534441849444,
+        "stop" : 1534441849447,
+        "duration" : 3
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,11 +33,26 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "video-save",
+      "name" : "stops video capture",
       "time" : {
-        "start" : 1534182401337,
-        "stop" : 1534182401337,
-        "duration" : 0
+        "start" : 1534441849447,
+        "stop" : 1534441849449,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "removes captured video",
+      "time" : {
+        "start" : 1534441849450,
+        "stop" : 1534441849451,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -50,7 +65,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 2,
+    "stepsCount" : 3,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -58,16 +73,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "help"
+    "value" : "fixtures"
   }, {
     "name" : "testClass",
-    "value" : "help"
+    "value" : "fixtures"
   }, {
     "name" : "testMethod",
-    "value" : "plugin help contains option"
+    "value" : "._after()"
   }, {
     "name" : "package",
-    "value" : "help"
+    "value" : "fixtures"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -81,7 +96,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "8efe29676112031e.json",
+  "source" : "77beda883b6dad93.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },
