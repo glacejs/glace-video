@@ -3,7 +3,7 @@
 suite("fixtures", () => {
 
     scope("fxVideo", () => {
-        var fake, SS;
+        var fake, $;
         var sandbox = sinon.createSandbox();
         var fxVideo = rewire("../../lib/fixtures/fxVideo");
 
@@ -58,13 +58,13 @@ suite("fixtures", () => {
 
             beforeChunk(() => {
                 _before = fxVideo.__get__("_before");
-                SS = fxVideo.__get__("SS");
-                sandbox.stub(SS, "startVideo").returns(true);
+                $ = fxVideo.__get__("$");
+                sandbox.stub($, "startVideo").returns(true);
             });
 
             chunk(async () => {
                 await _before(ctx)();
-                expect(SS.startVideo).to.be.calledOnce;
+                expect($.startVideo).to.be.calledOnce;
                 expect(ctx.errNumBefore).to.be.equal(0);
                 expect(ctx.isStarted).to.be.true;
             });
@@ -75,9 +75,9 @@ suite("fixtures", () => {
 
             beforeChunk(() => {
                 _after = fxVideo.__get__("_after");
-                SS = fxVideo.__get__("SS");
-                sandbox.stub(SS, "stopVideo");
-                sandbox.stub(SS, "removeVideo");
+                $ = fxVideo.__get__("$");
+                sandbox.stub($, "stopVideo");
+                sandbox.stub($, "removeVideo");
                 allure = {
                     attachVideo: sinon.spy(),
                 };
@@ -87,7 +87,7 @@ suite("fixtures", () => {
             chunk("skipped if video aren't captured", async () => {
                 ctx.isStarted = false;
                 await _after(ctx)();
-                expect(SS.stopVideo).to.not.be.called;
+                expect($.stopVideo).to.not.be.called;
             });
 
             chunk("stops video capture", async () => {
@@ -95,8 +95,8 @@ suite("fixtures", () => {
                 ctx.errNumBefore = 0;
                 CONF.video.save = true;
                 await _after(ctx)();
-                expect(SS.stopVideo).to.be.calledOnce;
-                expect(SS.removeVideo).to.not.be.called;
+                expect($.stopVideo).to.be.calledOnce;
+                expect($.removeVideo).to.not.be.called;
                 expect(ctx.isStarted).to.be.false;
             });
 
@@ -105,8 +105,8 @@ suite("fixtures", () => {
                 ctx.errNumBefore = 0;
                 CONF.video.save = false;
                 await _after(ctx)();
-                expect(SS.stopVideo).to.be.calledOnce;
-                expect(SS.removeVideo).to.be.calledOnce;
+                expect($.stopVideo).to.be.calledOnce;
+                expect($.removeVideo).to.be.calledOnce;
                 expect(ctx.isStarted).to.be.false;
             });
         });
