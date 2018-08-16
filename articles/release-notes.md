@@ -1,3 +1,8 @@
+### v1.2.0
+
+- Updated `glace-core`.
+- Started to use `$` only.
+
 ### v1.1.9
 
 - [Adapted](https://github.com/glacejs/glace-video/commit/074d89a0cc9597c9cecaccfdcd6e26c1d3933aae) for slaves mechanism.
