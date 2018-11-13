@@ -1,3 +1,7 @@
+### v1.2.1
+
+- Updated dependencies.
+
 ### v1.2.0
 
 - Updated `glace-core`.
