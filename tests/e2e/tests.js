@@ -8,7 +8,7 @@ suite("e2e tests", () => {
         });
     });
     
-    test("Record video of browser", null, [fxKillWebdriver, fxSelenium, fxWebdriver, fxBrowser, fxVideo], () => {
+    test("Record video of browser", null, [fxKillWebdriver, fxSelenium, fxBrowser, fxVideo], () => {
         chunk(async () => {
             console.log("video will be saved to", $.getVideo({ check: false }));
             await $.pause(5, "just pause");
