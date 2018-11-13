@@ -20,31 +20,31 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">52.38% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>11/21</span>
+        <span class='fraction'>21/21</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">20% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>2/10</span>
+        <span class='fraction'>10/10</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">60% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>3/5</span>
+        <span class='fraction'>5/5</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>9/18</span>
+        <span class='fraction'>18/18</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line medium'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -107,31 +107,31 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">"use strict";
@@ -153,29 +153,29 @@ module.exports = function (func) {
     var isStarted, errNumBefore, opts;
     var ctx = { isStarted, errNumBefore, opts };
 &nbsp;
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (this &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >this !== global)</span> {
-<span class="cstat-no" title="statement not covered" >        ctx.opts = { name: this.name, dir: this.dir };</span>
+    if (this &amp;&amp; this !== global) {
+        ctx.opts = { name: this.name, dir: this.dir };
     };
     before(_before(ctx));
     func();
     after(_after(ctx));
 };
 &nbsp;
-var _before = ctx =&gt; <span class="fstat-no" title="function not covered" >as</span>ync () =&gt; {
-<span class="cstat-no" title="statement not covered" >    ctx.errNumBefore = CONF.test.curCase.errors.length;</span>
-<span class="cstat-no" title="statement not covered" >    ctx.isStarted = await $.startVideo(ctx.opts);</span>
+var _before = ctx =&gt; async () =&gt; {
+    ctx.errNumBefore = CONF.test.curCase.errors.length;
+    ctx.isStarted = await $.startVideo(ctx.opts);
 };
 &nbsp;
-var _after = ctx =&gt; <span class="fstat-no" title="function not covered" >as</span>ync () =&gt; {
-<span class="cstat-no" title="statement not covered" >    if (!ctx.isStarted) <span class="cstat-no" title="statement not covered" >return;</span></span>
-    var videoPath = <span class="cstat-no" title="statement not covered" >await $.stopVideo();</span>
-<span class="cstat-no" title="statement not covered" >    ctx.isStarted = false;</span>
+var _after = ctx =&gt; async () =&gt; {
+    if (!ctx.isStarted) return;
+    var videoPath = await $.stopVideo();
+    ctx.isStarted = false;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (CONF.test.curCase.errors.length === ctx.errNumBefore &amp;&amp;</span>
+    if (CONF.test.curCase.errors.length === ctx.errNumBefore &amp;&amp;
             !CONF.video.save) {
-<span class="cstat-no" title="statement not covered" >        $.removeVideo();</span>
+        $.removeVideo();
     } else {
-<span class="cstat-no" title="statement not covered" >        allure.attachVideo("video", videoPath);</span>
+        allure.attachVideo("video", videoPath);
     };
 };
 &nbsp;</pre></td></tr>
@@ -184,7 +184,7 @@ var _after = ctx =&gt; <span class="fstat-no" title="function not covered" >as</
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Nov 13 2018 22:33:37 GMT+0200 (EET)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Nov 13 2018 22:36:42 GMT+0200 (EET)
 </div>
 </div>
 <script src="../../prettify.js"></script>

@@ -1,0 +1,272 @@
+{
+  "uid" : "86af65d1670ef88d",
+  "name" : "Record video of browser",
+  "fullName" : "e2e tests.Record video of browser",
+  "historyId" : "f683d68de49d93756f321d69d820856c",
+  "time" : {
+    "start" : 1542141383515,
+    "stop" : 1542141402806,
+    "duration" : 19291
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Install selenium drivers",
+      "time" : {
+        "start" : 1542141383649,
+        "stop" : 1542141389499,
+        "duration" : 5850
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Start selenium server on port 46074",
+      "time" : {
+        "start" : 1542141389510,
+        "stop" : 1542141390579,
+        "duration" : 1069
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Launch browser \"chrome-bd8c9479-0bfa-46d5-8870-0ca0f855852c\" via selenium",
+      "time" : {
+        "start" : 1542141390585,
+        "stop" : 1542141393978,
+        "duration" : 3393
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Record video to /home/user/vega/projects/glace/glace-video/report/tests/record-video-of-browser/videos/737e43d0-674e-4eaa-b4ee-b8caee1dcb03.avi",
+      "time" : {
+        "start" : 1542141393998,
+        "stop" : 1542141395013,
+        "duration" : 1015
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Sleep 1 sec because it needs a time to start recording",
+        "time" : {
+          "start" : 1542141394012,
+          "stop" : 1542141395013,
+          "duration" : 1001
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "",
+      "time" : {
+        "start" : 1542141395014,
+        "stop" : 1542141400016,
+        "duration" : 5002
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get video file",
+        "time" : {
+          "start" : 1542141395014,
+          "stop" : 1542141395014,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "Sleep 5 sec because just pause",
+        "time" : {
+          "start" : 1542141395014,
+          "stop" : 1542141400016,
+          "duration" : 5002
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Stop video recording",
+      "time" : {
+        "start" : 1542141400017,
+        "stop" : 1542141401395,
+        "duration" : 1378
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Sleep 1 sec because it needs a time to gather latest frames",
+        "time" : {
+          "start" : 1542141400017,
+          "stop" : 1542141401019,
+          "duration" : 1002
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Remove recorded video",
+      "time" : {
+        "start" : 1542141401396,
+        "stop" : 1542141401396,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Close browser \"chrome-bd8c9479-0bfa-46d5-8870-0ca0f855852c\"",
+      "time" : {
+        "start" : 1542141401397,
+        "stop" : 1542141402474,
+        "duration" : 1077
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Sleep 1 sec because webdriver process will be stopped",
+        "time" : {
+          "start" : 1542141401473,
+          "stop" : 1542141402474,
+          "duration" : 1001
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Stop selenium server",
+      "time" : {
+        "start" : 1542141402474,
+        "stop" : 1542141402806,
+        "duration" : 332
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 14,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "e2e tests"
+  }, {
+    "name" : "testClass",
+    "value" : "e2e tests"
+  }, {
+    "name" : "testMethod",
+    "value" : "Record video of browser"
+  }, {
+    "name" : "package",
+    "value" : "e2e tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "86af65d1670ef88d.json",
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "parameterValues" : [ ]
+}

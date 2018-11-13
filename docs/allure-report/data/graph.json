@@ -1,0 +1,181 @@
+[ {
+  "uid" : "3229f3a57310825a",
+  "name" : "._videoLocation()",
+  "time" : {
+    "start" : 1542141375444,
+    "stop" : 1542141375452,
+    "duration" : 8
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "521dc236ef5b51b1",
+  "name" : ".removeVideo()",
+  "time" : {
+    "start" : 1542141375434,
+    "stop" : 1542141375443,
+    "duration" : 9
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "86af65d1670ef88d",
+  "name" : "Record video of browser",
+  "time" : {
+    "start" : 1542141383515,
+    "stop" : 1542141402806,
+    "duration" : 19291
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "536ed6d9386309d1",
+  "name" : "Record video of display",
+  "time" : {
+    "start" : 1542141375502,
+    "stop" : 1542141383514,
+    "duration" : 8012
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "252c197509c41802",
+  "name" : ".startVideo()",
+  "time" : {
+    "start" : 1542141375403,
+    "stop" : 1542141375416,
+    "duration" : 13
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "19fab6dc2045fa09",
+  "name" : "contains",
+  "time" : {
+    "start" : 1542141375349,
+    "stop" : 1542141375361,
+    "duration" : 12
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "81152b17f1255dd8",
+  "name" : ".getVideo()",
+  "time" : {
+    "start" : 1542141375424,
+    "stop" : 1542141375434,
+    "duration" : 10
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "57a75cfc148e87a7",
+  "name" : "._after()",
+  "time" : {
+    "start" : 1542141375385,
+    "stop" : 1542141375391,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "efe9807c508a8190",
+  "name" : "._before()",
+  "time" : {
+    "start" : 1542141375379,
+    "stop" : 1542141375385,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e8ea7ec41f4785b",
+  "name" : "._makeVideoPath()",
+  "time" : {
+    "start" : 1542141375453,
+    "stop" : 1542141375459,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3676c95f02465252",
+  "name" : ".configure()",
+  "time" : {
+    "start" : 1542141375480,
+    "stop" : 1542141375486,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "deece6fef3589b78",
+  "name" : ".stopVideo()",
+  "time" : {
+    "start" : 1542141375416,
+    "stop" : 1542141375423,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fc892dc9e6870c83",
+  "name" : ".start()",
+  "time" : {
+    "start" : 1542141375486,
+    "stop" : 1542141375491,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d55334791aeb6626",
+  "name" : "plugin help contains option",
+  "time" : {
+    "start" : 1542141375400,
+    "stop" : 1542141375401,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "adfc37f28955d060",
+  "name" : ".fxVideo()",
+  "time" : {
+    "start" : 1542141375372,
+    "stop" : 1542141375379,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b62ab52ffa56c630",
+  "name" : ".stop()",
+  "time" : {
+    "start" : 1542141375491,
+    "stop" : 1542141375497,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c52393cbf6a9989b",
+  "name" : "instance",
+  "time" : {
+    "start" : 1542141375476,
+    "stop" : 1542141375480,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "84dc7b9464605735",
+  "name" : "Plugin lazy import",
+  "time" : {
+    "start" : 1542141375395,
+    "stop" : 1542141375397,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

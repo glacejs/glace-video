@@ -1,0 +1,249 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "config",
+    "children" : [ {
+      "name" : "contains",
+      "uid" : "19fab6dc2045fa09",
+      "parentUid" : "878afb098e871a5f66c18a277abe6d64",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542141375349,
+        "stop" : 1542141375361,
+        "duration" : 12
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "878afb098e871a5f66c18a277abe6d64"
+  }, {
+    "name" : "fixtures",
+    "children" : [ {
+      "name" : ".fxVideo()",
+      "uid" : "adfc37f28955d060",
+      "parentUid" : "2592b852c3c02d173d05a8a667d4e7ec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542141375372,
+        "stop" : 1542141375379,
+        "duration" : 7
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._before()",
+      "uid" : "efe9807c508a8190",
+      "parentUid" : "2592b852c3c02d173d05a8a667d4e7ec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542141375379,
+        "stop" : 1542141375385,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._after()",
+      "uid" : "57a75cfc148e87a7",
+      "parentUid" : "2592b852c3c02d173d05a8a667d4e7ec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542141375385,
+        "stop" : 1542141375391,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2592b852c3c02d173d05a8a667d4e7ec"
+  }, {
+    "name" : "import",
+    "children" : [ {
+      "name" : "Plugin lazy import",
+      "uid" : "84dc7b9464605735",
+      "parentUid" : "d59a8c7be7fa9550263e816ce50c1304",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542141375395,
+        "stop" : 1542141375397,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d59a8c7be7fa9550263e816ce50c1304"
+  }, {
+    "name" : "help",
+    "children" : [ {
+      "name" : "plugin help contains option",
+      "uid" : "d55334791aeb6626",
+      "parentUid" : "5173d48d49ba424021d5d67634957168",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542141375400,
+        "stop" : 1542141375401,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "5173d48d49ba424021d5d67634957168"
+  }, {
+    "name" : "Steps",
+    "children" : [ {
+      "name" : ".startVideo()",
+      "uid" : "252c197509c41802",
+      "parentUid" : "461699b47d3f48167e172dc7180133a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542141375403,
+        "stop" : 1542141375416,
+        "duration" : 13
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : ".stopVideo()",
+      "uid" : "deece6fef3589b78",
+      "parentUid" : "461699b47d3f48167e172dc7180133a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542141375416,
+        "stop" : 1542141375423,
+        "duration" : 7
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : ".getVideo()",
+      "uid" : "81152b17f1255dd8",
+      "parentUid" : "461699b47d3f48167e172dc7180133a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542141375424,
+        "stop" : 1542141375434,
+        "duration" : 10
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : ".removeVideo()",
+      "uid" : "521dc236ef5b51b1",
+      "parentUid" : "461699b47d3f48167e172dc7180133a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542141375434,
+        "stop" : 1542141375443,
+        "duration" : 9
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._videoLocation()",
+      "uid" : "3229f3a57310825a",
+      "parentUid" : "461699b47d3f48167e172dc7180133a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542141375444,
+        "stop" : 1542141375452,
+        "duration" : 8
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "._makeVideoPath()",
+      "uid" : "9e8ea7ec41f4785b",
+      "parentUid" : "461699b47d3f48167e172dc7180133a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542141375453,
+        "stop" : 1542141375459,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "461699b47d3f48167e172dc7180133a9"
+  }, {
+    "name" : "Video",
+    "children" : [ {
+      "name" : "instance",
+      "uid" : "c52393cbf6a9989b",
+      "parentUid" : "6e0de14c01b32b929543176d6fb8f521",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542141375476,
+        "stop" : 1542141375480,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : ".configure()",
+      "uid" : "3676c95f02465252",
+      "parentUid" : "6e0de14c01b32b929543176d6fb8f521",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542141375480,
+        "stop" : 1542141375486,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : ".start()",
+      "uid" : "fc892dc9e6870c83",
+      "parentUid" : "6e0de14c01b32b929543176d6fb8f521",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542141375486,
+        "stop" : 1542141375491,
+        "duration" : 5
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : ".stop()",
+      "uid" : "b62ab52ffa56c630",
+      "parentUid" : "6e0de14c01b32b929543176d6fb8f521",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542141375491,
+        "stop" : 1542141375497,
+        "duration" : 6
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "6e0de14c01b32b929543176d6fb8f521"
+  }, {
+    "name" : "e2e tests",
+    "children" : [ {
+      "name" : "Record video of display",
+      "uid" : "536ed6d9386309d1",
+      "parentUid" : "5026b933dff805eb251ddf2d7a258ff7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542141375502,
+        "stop" : 1542141383514,
+        "duration" : 8012
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Record video of browser",
+      "uid" : "86af65d1670ef88d",
+      "parentUid" : "5026b933dff805eb251ddf2d7a258ff7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542141383515,
+        "stop" : 1542141402806,
+        "duration" : 19291
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "5026b933dff805eb251ddf2d7a258ff7"
+  } ],
+  "name" : "packages"
+}
