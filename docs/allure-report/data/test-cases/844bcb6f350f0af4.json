@@ -1,12 +1,12 @@
 {
-  "uid" : "84dc7b9464605735",
-  "name" : "Plugin lazy import",
-  "fullName" : "import.Plugin lazy import",
-  "historyId" : "195e12178d78f888191178bc67aeb146",
+  "uid" : "844bcb6f350f0af4",
+  "name" : "._makeVideoPath()",
+  "fullName" : "Steps.._makeVideoPath()",
+  "historyId" : "ff973880a99d71efea23ddae987b2e3a",
   "time" : {
-    "start" : 1542141375395,
-    "stop" : 1542141375397,
-    "duration" : 2
+    "start" : 1542994358098,
+    "stop" : 1542994358105,
+    "duration" : 7
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,11 +18,11 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "empty by default",
+      "name" : "generates new file name",
       "time" : {
-        "start" : 1542141375396,
-        "stop" : 1542141375396,
-        "duration" : 0
+        "start" : 1542994358099,
+        "stop" : 1542994358101,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,25 +33,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "has config",
+      "name" : "transforms to kebab file name 'it's my file name'",
       "time" : {
-        "start" : 1542141375396,
-        "stop" : 1542141375396,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "has globals",
-      "time" : {
-        "start" : 1542141375396,
-        "stop" : 1542141375397,
+        "start" : 1542994358101,
+        "stop" : 1542994358102,
         "duration" : 1
       },
       "status" : "passed",
@@ -63,11 +48,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "has plugin help",
+      "name" : "transforms to kebab file name 'it's my file name.avi'",
       "time" : {
-        "start" : 1542141375397,
-        "stop" : 1542141375397,
-        "duration" : 0
+        "start" : 1542994358102,
+        "stop" : 1542994358103,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -78,11 +63,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "has steps",
+      "name" : "uses passed folder path",
       "time" : {
-        "start" : 1542141375397,
-        "stop" : 1542141375397,
-        "duration" : 0
+        "start" : 1542994358104,
+        "stop" : 1542994358105,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -95,7 +80,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 5,
+    "stepsCount" : 4,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -103,16 +88,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "import"
+    "value" : "Steps"
   }, {
     "name" : "testClass",
-    "value" : "import"
+    "value" : "Steps"
   }, {
     "name" : "testMethod",
-    "value" : "Plugin lazy import"
+    "value" : "._makeVideoPath()"
   }, {
     "name" : "package",
-    "value" : "import"
+    "value" : "Steps"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -126,7 +111,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "84dc7b9464605735.json",
+  "source" : "844bcb6f350f0af4.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

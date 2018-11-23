@@ -1,12 +1,12 @@
 {
-  "uid" : "86af65d1670ef88d",
+  "uid" : "ff992afc51cfda8e",
   "name" : "Record video of browser",
   "fullName" : "e2e tests.Record video of browser",
   "historyId" : "f683d68de49d93756f321d69d820856c",
   "time" : {
-    "start" : 1542141383515,
-    "stop" : 1542141402806,
-    "duration" : 19291
+    "start" : 1542994366181,
+    "stop" : 1542994381641,
+    "duration" : 15460
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -20,9 +20,9 @@
     "steps" : [ {
       "name" : "Install selenium drivers",
       "time" : {
-        "start" : 1542141383649,
-        "stop" : 1542141389499,
-        "duration" : 5850
+        "start" : 1542994366216,
+        "stop" : 1542994369686,
+        "duration" : 3470
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,11 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Start selenium server on port 46074",
+      "name" : "Start selenium server on port 37695",
       "time" : {
-        "start" : 1542141389510,
-        "stop" : 1542141390579,
-        "duration" : 1069
+        "start" : 1542994369690,
+        "stop" : 1542994370708,
+        "duration" : 1018
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,11 +48,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Launch browser \"chrome-bd8c9479-0bfa-46d5-8870-0ca0f855852c\" via selenium",
+      "name" : "Launch browser \"chrome-bb752e65-4650-4c9c-b52c-19be3b68ef90\" via selenium",
       "time" : {
-        "start" : 1542141390585,
-        "stop" : 1542141393978,
-        "duration" : 3393
+        "start" : 1542994370716,
+        "stop" : 1542994373002,
+        "duration" : 2286
       },
       "status" : "passed",
       "steps" : [ ],
@@ -63,19 +63,19 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Record video to /home/user/vega/projects/glace/glace-video/report/tests/record-video-of-browser/videos/737e43d0-674e-4eaa-b4ee-b8caee1dcb03.avi",
+      "name" : "Record video to /home/user/vega/projects/glace/glace-video/report/tests/record-video-of-browser/videos/5bf8f077-9ee7-4c9c-8859-38bd3280bb9f.avi",
       "time" : {
-        "start" : 1542141393998,
-        "stop" : 1542141395013,
-        "duration" : 1015
+        "start" : 1542994373023,
+        "stop" : 1542994374035,
+        "duration" : 1012
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Sleep 1 sec because it needs a time to start recording",
         "time" : {
-          "start" : 1542141394012,
-          "stop" : 1542141395013,
-          "duration" : 1001
+          "start" : 1542994373033,
+          "stop" : 1542994374035,
+          "duration" : 1002
         },
         "status" : "passed",
         "steps" : [ ],
@@ -95,16 +95,16 @@
     }, {
       "name" : "",
       "time" : {
-        "start" : 1542141395014,
-        "stop" : 1542141400016,
+        "start" : 1542994374035,
+        "stop" : 1542994379037,
         "duration" : 5002
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Get video file",
         "time" : {
-          "start" : 1542141395014,
-          "stop" : 1542141395014,
+          "start" : 1542994374036,
+          "stop" : 1542994374036,
           "duration" : 0
         },
         "status" : "passed",
@@ -118,9 +118,9 @@
       }, {
         "name" : "Sleep 5 sec because just pause",
         "time" : {
-          "start" : 1542141395014,
-          "stop" : 1542141400016,
-          "duration" : 5002
+          "start" : 1542994374036,
+          "stop" : 1542994379037,
+          "duration" : 5001
         },
         "status" : "passed",
         "steps" : [ ],
@@ -140,17 +140,17 @@
     }, {
       "name" : "Stop video recording",
       "time" : {
-        "start" : 1542141400017,
-        "stop" : 1542141401395,
-        "duration" : 1378
+        "start" : 1542994379038,
+        "stop" : 1542994380243,
+        "duration" : 1205
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Sleep 1 sec because it needs a time to gather latest frames",
         "time" : {
-          "start" : 1542141400017,
-          "stop" : 1542141401019,
-          "duration" : 1002
+          "start" : 1542994379038,
+          "stop" : 1542994380039,
+          "duration" : 1001
         },
         "status" : "passed",
         "steps" : [ ],
@@ -170,9 +170,9 @@
     }, {
       "name" : "Remove recorded video",
       "time" : {
-        "start" : 1542141401396,
-        "stop" : 1542141401396,
-        "duration" : 0
+        "start" : 1542994380243,
+        "stop" : 1542994380244,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -183,19 +183,19 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Close browser \"chrome-bd8c9479-0bfa-46d5-8870-0ca0f855852c\"",
+      "name" : "Close browser \"chrome-bb752e65-4650-4c9c-b52c-19be3b68ef90\"",
       "time" : {
-        "start" : 1542141401397,
-        "stop" : 1542141402474,
-        "duration" : 1077
+        "start" : 1542994380244,
+        "stop" : 1542994381304,
+        "duration" : 1060
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Sleep 1 sec because webdriver process will be stopped",
         "time" : {
-          "start" : 1542141401473,
-          "stop" : 1542141402474,
-          "duration" : 1001
+          "start" : 1542994380301,
+          "stop" : 1542994381303,
+          "duration" : 1002
         },
         "status" : "passed",
         "steps" : [ ],
@@ -215,9 +215,9 @@
     }, {
       "name" : "Stop selenium server",
       "time" : {
-        "start" : 1542141402474,
-        "stop" : 1542141402806,
-        "duration" : 332
+        "start" : 1542994381305,
+        "stop" : 1542994381640,
+        "duration" : 335
       },
       "status" : "passed",
       "steps" : [ ],
@@ -261,7 +261,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "86af65d1670ef88d.json",
+  "source" : "ff992afc51cfda8e.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

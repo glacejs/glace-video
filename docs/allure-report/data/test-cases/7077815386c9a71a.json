@@ -1,12 +1,12 @@
 {
-  "uid" : "3229f3a57310825a",
-  "name" : "._videoLocation()",
-  "fullName" : "Steps.._videoLocation()",
-  "historyId" : "e78e6b1f6316d8916d2a2df72c683eaf",
+  "uid" : "7077815386c9a71a",
+  "name" : "Plugin lazy import",
+  "fullName" : "import.Plugin lazy import",
+  "historyId" : "195e12178d78f888191178bc67aeb146",
   "time" : {
-    "start" : 1542141375444,
-    "stop" : 1542141375452,
-    "duration" : 8
+    "start" : 1542994358006,
+    "stop" : 1542994358011,
+    "duration" : 5
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,40 +18,10 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "captures browser size if browser is launched",
+      "name" : "empty by default",
       "time" : {
-        "start" : 1542141375445,
-        "stop" : 1542141375447,
-        "duration" : 2
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "captures screen size if browser isn't launched",
-      "time" : {
-        "start" : 1542141375447,
-        "stop" : 1542141375449,
-        "duration" : 2
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "captures screen size if browser isn't init",
-      "time" : {
-        "start" : 1542141375449,
-        "stop" : 1542141375450,
+        "start" : 1542994358007,
+        "stop" : 1542994358008,
         "duration" : 1
       },
       "status" : "passed",
@@ -63,11 +33,56 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "throws error that browser out of screen",
+      "name" : "has config",
       "time" : {
-        "start" : 1542141375450,
-        "stop" : 1542141375452,
-        "duration" : 2
+        "start" : 1542994358008,
+        "stop" : 1542994358009,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "has globals",
+      "time" : {
+        "start" : 1542994358009,
+        "stop" : 1542994358009,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "has plugin help",
+      "time" : {
+        "start" : 1542994358009,
+        "stop" : 1542994358010,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "has steps",
+      "time" : {
+        "start" : 1542994358010,
+        "stop" : 1542994358010,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -80,7 +95,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 4,
+    "stepsCount" : 5,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -88,16 +103,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Steps"
+    "value" : "import"
   }, {
     "name" : "testClass",
-    "value" : "Steps"
+    "value" : "import"
   }, {
     "name" : "testMethod",
-    "value" : "._videoLocation()"
+    "value" : "Plugin lazy import"
   }, {
     "name" : "package",
-    "value" : "Steps"
+    "value" : "import"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -111,7 +126,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "3229f3a57310825a.json",
+  "source" : "7077815386c9a71a.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

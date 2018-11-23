@@ -1,12 +1,12 @@
 {
-  "uid" : "adfc37f28955d060",
-  "name" : ".fxVideo()",
-  "fullName" : "fixtures..fxVideo()",
-  "historyId" : "f7e7ab5fe3d8c4372e841df722e1c4",
+  "uid" : "e5343eadbe8832fd",
+  "name" : "instance",
+  "fullName" : "Video.instance",
+  "historyId" : "b6656ec9020e5e58c8f13af4e97539d2",
   "time" : {
-    "start" : 1542141375372,
-    "stop" : 1542141375379,
-    "duration" : 7
+    "start" : 1542994358116,
+    "stop" : 1542994358118,
+    "duration" : 2
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -18,11 +18,11 @@
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "in global context",
+      "name" : "not running",
       "time" : {
-        "start" : 1542141375372,
-        "stop" : 1542141375376,
-        "duration" : 4
+        "start" : 1542994358116,
+        "stop" : 1542994358117,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,11 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "in custom context",
+      "name" : "doesn't have file path",
       "time" : {
-        "start" : 1542141375377,
-        "stop" : 1542141375379,
-        "duration" : 2
+        "start" : 1542994358117,
+        "stop" : 1542994358118,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -58,16 +58,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "fixtures"
+    "value" : "Video"
   }, {
     "name" : "testClass",
-    "value" : "fixtures"
+    "value" : "Video"
   }, {
     "name" : "testMethod",
-    "value" : ".fxVideo()"
+    "value" : "instance"
   }, {
     "name" : "package",
-    "value" : "fixtures"
+    "value" : "Video"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -81,7 +81,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "adfc37f28955d060.json",
+  "source" : "e5343eadbe8832fd.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },
