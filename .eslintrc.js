@@ -21,10 +21,11 @@ module.exports = {
         "rewire": true,
         "fxWebdriver": true,
         "fxVideo": true,
+        "fxVideoFunc": true,
         "fxKillWebdriver": true,
         "fxBrowser": true,
         "allure": true,
-        "fxSelenium": true
+        "fxSeleniumServer": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {

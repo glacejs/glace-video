@@ -46,16 +46,16 @@
   "dependencies": {
     "chai": "4.2.0",
     "cross-spawn": "6.0.5",
-    "glace-utils": "1.3.1",
+    "glace-utils": "1.3.2",
     "lodash": "4.17.11",
     "screen-resolution": "1.0.0",
     "uuid": "3.3.2",
     "which": "1.3.1"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "glace-core": "^1.8.9",
-    "glace-web": "^1.3.8",
+    "eslint": "^5.9.0",
+    "glace-core": "^1.9.3",
+    "glace-web": "^1.3.9",
     "ink-docstrap": "^1.3.0",
     "jsdoc": "^3.5.5",
     "jsdoc-strip-async-await": "^0.1.0",
