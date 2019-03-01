@@ -1,50 +1,63 @@
 {
-  "uid" : "b68c1ef1e1ff5a11",
-  "name" : ".stopVideo()",
-  "fullName" : "Steps..stopVideo()",
-  "historyId" : "5b1be86fadd5c888cb8b7c1b72b32782",
+  "uid" : "7af64d5783846850",
+  "name" : "Record video of display",
+  "fullName" : "e2e tests.Record video of display",
+  "historyId" : "6cf8dcb55152617c2da6d868fa0005f3",
   "time" : {
-    "start" : 1542994358040,
-    "stop" : 1542994358051,
-    "duration" : 11
+    "start" : 1551415230268,
+    "stop" : 1551415238045,
+    "duration" : 7777
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "passed",
-  "statusDetails" : {
-    "flaky" : false
-  },
+  "flaky" : false,
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "skipped if video recording isnät launched",
+      "name" : "Record video to /Users/sergeichip/user/projects/glace/glace-video/report/tests/record-video-of-display/videos/ab4bd615-2cbd-47d8-8976-7288de9922f7.avi",
       "time" : {
-        "start" : 1542994358041,
-        "stop" : 1542994358044,
-        "duration" : 3
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "stops video",
-      "time" : {
-        "start" : 1542994358044,
-        "stop" : 1542994358047,
-        "duration" : 3
+        "start" : 1551415230912,
+        "stop" : 1551415231933,
+        "duration" : 1021
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "Stop video recording",
+        "name" : "Sleep 1 sec because it needs a time to start recording",
         "time" : {
-          "start" : 1542994358046,
-          "stop" : 1542994358046,
+          "start" : 1551415230931,
+          "stop" : 1551415231933,
+          "duration" : 1002
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "",
+      "time" : {
+        "start" : 1551415231933,
+        "stop" : 1551415236935,
+        "duration" : 5002
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Get video file",
+        "time" : {
+          "start" : 1551415231933,
+          "stop" : 1551415231933,
           "duration" : 0
         },
         "status" : "passed",
@@ -55,27 +68,42 @@
         "attachmentsCount" : 0,
         "shouldDisplayMessage" : false,
         "hasContent" : false
+      }, {
+        "name" : "Sleep 5 sec because just pause",
+        "time" : {
+          "start" : 1551415231934,
+          "stop" : 1551415236935,
+          "duration" : 5001
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
       } ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 1,
+      "stepsCount" : 2,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "doesn't check video stop if flag is set",
+      "name" : "Stop video recording",
       "time" : {
-        "start" : 1542994358047,
-        "stop" : 1542994358049,
-        "duration" : 2
+        "start" : 1551415236936,
+        "stop" : 1551415238044,
+        "duration" : 1108
       },
       "status" : "passed",
       "steps" : [ {
-        "name" : "Stop video recording",
+        "name" : "Sleep 1 sec because it needs a time to gather latest frames",
         "time" : {
-          "start" : 1542994358048,
-          "stop" : 1542994358049,
-          "duration" : 1
+          "start" : 1551415236936,
+          "stop" : 1551415237941,
+          "duration" : 1005
         },
         "status" : "passed",
         "steps" : [ ],
@@ -93,39 +121,24 @@
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "throws error if video isn't stopped",
+      "name" : "Remove recorded video",
       "time" : {
-        "start" : 1542994358049,
-        "stop" : 1542994358051,
-        "duration" : 2
+        "start" : 1551415238044,
+        "stop" : 1551415238045,
+        "duration" : 1
       },
       "status" : "passed",
-      "steps" : [ {
-        "name" : "Stop video recording",
-        "time" : {
-          "start" : 1542994358050,
-          "stop" : 1542994358051,
-          "duration" : 1
-        },
-        "status" : "passed",
-        "steps" : [ ],
-        "attachments" : [ ],
-        "parameters" : [ ],
-        "stepsCount" : 0,
-        "attachmentsCount" : 0,
-        "shouldDisplayMessage" : false,
-        "hasContent" : false
-      } ],
+      "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 1,
+      "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : true
+      "hasContent" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 7,
+    "stepsCount" : 8,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -133,16 +146,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Steps"
+    "value" : "e2e tests"
   }, {
     "name" : "testClass",
-    "value" : "Steps"
+    "value" : "e2e tests"
   }, {
     "name" : "testMethod",
-    "value" : ".stopVideo()"
+    "value" : "Record video of display"
   }, {
     "name" : "package",
-    "value" : "Steps"
+    "value" : "e2e tests"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -150,18 +163,13 @@
   "parameters" : [ ],
   "links" : [ ],
   "hidden" : false,
+  "retry" : false,
   "extra" : {
     "severity" : "normal",
     "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "b68c1ef1e1ff5a11.json",
-  "statusDetailsSafe" : {
-    "flaky" : false
-  },
-  "statusMessage" : {
-    "present" : false
-  },
+  "source" : "7af64d5783846850.json",
   "parameterValues" : [ ]
 }

@@ -1,0 +1,151 @@
+[ {
+  "uid" : "79e9cfe9200883c3",
+  "name" : "Plugin lazy import",
+  "time" : {
+    "start" : 1551415230192,
+    "stop" : 1551415230194,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ede37f3f5202daee",
+  "name" : "contains",
+  "time" : {
+    "start" : 1551415230181,
+    "stop" : 1551415230187,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd7b8c8027bd322b",
+  "name" : ".stopVideo()",
+  "time" : {
+    "start" : 1551415230210,
+    "stop" : 1551415230217,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7af64d5783846850",
+  "name" : "Record video of display",
+  "time" : {
+    "start" : 1551415230268,
+    "stop" : 1551415238045,
+    "duration" : 7777
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1123bada91636e5b",
+  "name" : "._videoLocation()",
+  "time" : {
+    "start" : 1551415230233,
+    "stop" : 1551415230239,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ee79c43bd5aa8acb",
+  "name" : ".configure()",
+  "time" : {
+    "start" : 1551415230254,
+    "stop" : 1551415230258,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5694192e6786bdae",
+  "name" : "._makeVideoPath()",
+  "time" : {
+    "start" : 1551415230239,
+    "stop" : 1551415230245,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1d83f31d5db60094",
+  "name" : "instance",
+  "time" : {
+    "start" : 1551415230252,
+    "stop" : 1551415230254,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "de997438f849ab11",
+  "name" : "Record video of browser",
+  "time" : {
+    "start" : 1551415238046,
+    "stop" : 1551415251251,
+    "duration" : 13205
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f550fa63a3294406",
+  "name" : ".removeVideo()",
+  "time" : {
+    "start" : 1551415230227,
+    "stop" : 1551415230233,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af5d14574690ca40",
+  "name" : ".stop()",
+  "time" : {
+    "start" : 1551415230262,
+    "stop" : 1551415230265,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aa9f2267d63da7ed",
+  "name" : "plugin help contains option",
+  "time" : {
+    "start" : 1551415230196,
+    "stop" : 1551415230198,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f6850466c9ae3c2",
+  "name" : ".startVideo()",
+  "time" : {
+    "start" : 1551415230199,
+    "stop" : 1551415230210,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6923428e10db8c1a",
+  "name" : ".getVideo()",
+  "time" : {
+    "start" : 1551415230217,
+    "stop" : 1551415230227,
+    "duration" : 10
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "169e1f98854c1014",
+  "name" : ".start()",
+  "time" : {
+    "start" : 1551415230259,
+    "stop" : 1551415230261,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

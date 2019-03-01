@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">93.22% </span>
+        <span class="strong">94.92% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>55/59</span>
+        <span class='fraction'>56/59</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">88.89% </span>
@@ -35,9 +35,9 @@
         <span class='fraction'>6/6</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">92.86% </span>
+        <span class="strong">94.64% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>52/56</span>
+        <span class='fraction'>53/56</span>
       </div>
     </div>
     <p class="quiet">
@@ -267,27 +267,27 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -413,14 +413,14 @@ VideoRecorder.prototype.configure = function (opts) {
 &nbsp;
     } else if (this.__process.platform === "linux") {
 &nbsp;
-        if (this.__which.sync("avconv", { nothrow: true })) {
-            this._recordCmd = "avconv";
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (this.__which.sync("avconv", { nothrow: true })) {
+<span class="cstat-no" title="statement not covered" >            this._recordCmd = "avconv";</span>
         } else <span class="missing-if-branch" title="if path not taken" >I</span>if (this.__which.sync("ffmpeg", { nothrow: true })) {
 <span class="cstat-no" title="statement not covered" >            this._recordCmd = "ffmpeg";</span>
         } else {
             throw new Error("not found: avconv or ffmpeg");
         };
-        this._recordOpts = [ "-y",
+<span class="cstat-no" title="statement not covered" >        this._recordOpts = [ "-y",</span>
             "-loglevel", "quiet",
             "-f", "x11grab",
             "-r", opts.fps,
@@ -429,11 +429,11 @@ VideoRecorder.prototype.configure = function (opts) {
             "-codec", "libx264",
             this.filePath ];
 &nbsp;
-    } else <span class="missing-if-branch" title="if path not taken" >I</span>if (this.__process.platform === "darwin") {
+    } else if (this.__process.platform === "darwin") {
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        this.__which.sync("ffmpeg");</span>
-<span class="cstat-no" title="statement not covered" >        this._recordCmd = "ffmpeg";</span>
-<span class="cstat-no" title="statement not covered" >        this._recordOpts = [ "-y",</span>
+        this.__which.sync("ffmpeg");
+        this._recordCmd = "ffmpeg";
+        this._recordOpts = [ "-y",
             "-loglevel", "quiet",
             "-f", "avfoundation",
             "-r", opts.fps,
@@ -490,7 +490,7 @@ module.exports = VideoRecorder;
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Nov 23 2018 19:33:01 GMT+0200 (EET)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Mar 01 2019 06:40:51 GMT+0200 (EET)
 </div>
 </div>
 <script src="../prettify.js"></script>

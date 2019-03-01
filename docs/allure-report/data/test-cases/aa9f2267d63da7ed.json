@@ -1,28 +1,26 @@
 {
-  "uid" : "99e931090bc007fb",
+  "uid" : "aa9f2267d63da7ed",
   "name" : "plugin help contains option",
   "fullName" : "help.plugin help contains option",
   "historyId" : "90b09b96ad85837f7dbc21b0069b3afc",
   "time" : {
-    "start" : 1542994358015,
-    "stop" : 1542994358018,
-    "duration" : 3
+    "start" : 1551415230196,
+    "stop" : 1551415230198,
+    "duration" : 2
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "passed",
-  "statusDetails" : {
-    "flaky" : false
-  },
+  "flaky" : false,
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
       "name" : "video",
       "time" : {
-        "start" : 1542994358016,
-        "stop" : 1542994358017,
-        "duration" : 1
+        "start" : 1551415230197,
+        "stop" : 1551415230197,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -35,8 +33,8 @@
     }, {
       "name" : "video-save",
       "time" : {
-        "start" : 1542994358017,
-        "stop" : 1542994358017,
+        "start" : 1551415230197,
+        "stop" : 1551415230197,
         "duration" : 0
       },
       "status" : "passed",
@@ -75,18 +73,13 @@
   "parameters" : [ ],
   "links" : [ ],
   "hidden" : false,
+  "retry" : false,
   "extra" : {
     "severity" : "normal",
     "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "99e931090bc007fb.json",
-  "statusDetailsSafe" : {
-    "flaky" : false
-  },
-  "statusMessage" : {
-    "present" : false
-  },
+  "source" : "aa9f2267d63da7ed.json",
   "parameterValues" : [ ]
 }

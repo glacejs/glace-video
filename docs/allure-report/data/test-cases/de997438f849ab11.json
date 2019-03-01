@@ -1,28 +1,26 @@
 {
-  "uid" : "ff992afc51cfda8e",
+  "uid" : "de997438f849ab11",
   "name" : "Record video of browser",
   "fullName" : "e2e tests.Record video of browser",
   "historyId" : "f683d68de49d93756f321d69d820856c",
   "time" : {
-    "start" : 1542994366181,
-    "stop" : 1542994381641,
-    "duration" : 15460
+    "start" : 1551415238046,
+    "stop" : 1551415251251,
+    "duration" : 13205
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "passed",
-  "statusDetails" : {
-    "flaky" : false
-  },
+  "flaky" : false,
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
       "name" : "Install selenium drivers",
       "time" : {
-        "start" : 1542994366216,
-        "stop" : 1542994369686,
-        "duration" : 3470
+        "start" : 1551415238109,
+        "stop" : 1551415240521,
+        "duration" : 2412
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,11 +31,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Start selenium server on port 37695",
+      "name" : "Start selenium server on port 59673",
       "time" : {
-        "start" : 1542994369690,
-        "stop" : 1542994370708,
-        "duration" : 1018
+        "start" : 1551415240524,
+        "stop" : 1551415241290,
+        "duration" : 766
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,11 +46,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Launch browser \"chrome-bb752e65-4650-4c9c-b52c-19be3b68ef90\" via selenium",
+      "name" : "Launch browser \"chrome-68d494cc-c0aa-4bb1-9299-6edb54bc0834\" via selenium",
       "time" : {
-        "start" : 1542994370716,
-        "stop" : 1542994373002,
-        "duration" : 2286
+        "start" : 1551415241294,
+        "stop" : 1551415242662,
+        "duration" : 1368
       },
       "status" : "passed",
       "steps" : [ ],
@@ -63,19 +61,19 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Record video to /home/user/vega/projects/glace/glace-video/report/tests/record-video-of-browser/videos/5bf8f077-9ee7-4c9c-8859-38bd3280bb9f.avi",
+      "name" : "Record video to /Users/sergeichip/user/projects/glace/glace-video/report/tests/record-video-of-browser/videos/d43ca7da-2206-4fdf-8369-03cdfdc82d69.avi",
       "time" : {
-        "start" : 1542994373023,
-        "stop" : 1542994374035,
+        "start" : 1551415242672,
+        "stop" : 1551415243684,
         "duration" : 1012
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Sleep 1 sec because it needs a time to start recording",
         "time" : {
-          "start" : 1542994373033,
-          "stop" : 1542994374035,
-          "duration" : 1002
+          "start" : 1551415242680,
+          "stop" : 1551415243683,
+          "duration" : 1003
         },
         "status" : "passed",
         "steps" : [ ],
@@ -95,16 +93,16 @@
     }, {
       "name" : "",
       "time" : {
-        "start" : 1542994374035,
-        "stop" : 1542994379037,
-        "duration" : 5002
+        "start" : 1551415243684,
+        "stop" : 1551415248689,
+        "duration" : 5005
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Get video file",
         "time" : {
-          "start" : 1542994374036,
-          "stop" : 1542994374036,
+          "start" : 1551415243685,
+          "stop" : 1551415243685,
           "duration" : 0
         },
         "status" : "passed",
@@ -118,9 +116,9 @@
       }, {
         "name" : "Sleep 5 sec because just pause",
         "time" : {
-          "start" : 1542994374036,
-          "stop" : 1542994379037,
-          "duration" : 5001
+          "start" : 1551415243686,
+          "stop" : 1551415248688,
+          "duration" : 5002
         },
         "status" : "passed",
         "steps" : [ ],
@@ -140,17 +138,17 @@
     }, {
       "name" : "Stop video recording",
       "time" : {
-        "start" : 1542994379038,
-        "stop" : 1542994380243,
-        "duration" : 1205
+        "start" : 1551415248689,
+        "stop" : 1551415249821,
+        "duration" : 1132
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Sleep 1 sec because it needs a time to gather latest frames",
         "time" : {
-          "start" : 1542994379038,
-          "stop" : 1542994380039,
-          "duration" : 1001
+          "start" : 1551415248689,
+          "stop" : 1551415249693,
+          "duration" : 1004
         },
         "status" : "passed",
         "steps" : [ ],
@@ -170,8 +168,8 @@
     }, {
       "name" : "Remove recorded video",
       "time" : {
-        "start" : 1542994380243,
-        "stop" : 1542994380244,
+        "start" : 1551415249821,
+        "stop" : 1551415249822,
         "duration" : 1
       },
       "status" : "passed",
@@ -183,19 +181,19 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Close browser \"chrome-bb752e65-4650-4c9c-b52c-19be3b68ef90\"",
+      "name" : "Close browser \"chrome-68d494cc-c0aa-4bb1-9299-6edb54bc0834\"",
       "time" : {
-        "start" : 1542994380244,
-        "stop" : 1542994381304,
-        "duration" : 1060
+        "start" : 1551415249823,
+        "stop" : 1551415250880,
+        "duration" : 1057
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "Sleep 1 sec because webdriver process will be stopped",
         "time" : {
-          "start" : 1542994380301,
-          "stop" : 1542994381303,
-          "duration" : 1002
+          "start" : 1551415249878,
+          "stop" : 1551415250879,
+          "duration" : 1001
         },
         "status" : "passed",
         "steps" : [ ],
@@ -215,9 +213,9 @@
     }, {
       "name" : "Stop selenium server",
       "time" : {
-        "start" : 1542994381305,
-        "stop" : 1542994381640,
-        "duration" : 335
+        "start" : 1551415250880,
+        "stop" : 1551415251250,
+        "duration" : 370
       },
       "status" : "passed",
       "steps" : [ ],
@@ -255,18 +253,13 @@
   "parameters" : [ ],
   "links" : [ ],
   "hidden" : false,
+  "retry" : false,
   "extra" : {
     "severity" : "normal",
     "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "ff992afc51cfda8e.json",
-  "statusDetailsSafe" : {
-    "flaky" : false
-  },
-  "statusMessage" : {
-    "present" : false
-  },
+  "source" : "de997438f849ab11.json",
   "parameterValues" : [ ]
 }

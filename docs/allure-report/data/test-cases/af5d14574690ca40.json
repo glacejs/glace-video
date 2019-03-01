@@ -1,27 +1,25 @@
 {
-  "uid" : "7077815386c9a71a",
-  "name" : "Plugin lazy import",
-  "fullName" : "import.Plugin lazy import",
-  "historyId" : "195e12178d78f888191178bc67aeb146",
+  "uid" : "af5d14574690ca40",
+  "name" : ".stop()",
+  "fullName" : "Video..stop()",
+  "historyId" : "e250f1cba3beaaa28198b23cb6a98014",
   "time" : {
-    "start" : 1542994358006,
-    "stop" : 1542994358011,
-    "duration" : 5
+    "start" : 1551415230262,
+    "stop" : 1551415230265,
+    "duration" : 3
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "passed",
-  "statusDetails" : {
-    "flaky" : false
-  },
+  "flaky" : false,
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "empty by default",
+      "name" : "skipped if video recording isn't launched yet",
       "time" : {
-        "start" : 1542994358007,
-        "stop" : 1542994358008,
+        "start" : 1551415230262,
+        "stop" : 1551415230263,
         "duration" : 1
       },
       "status" : "passed",
@@ -33,10 +31,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "has config",
+      "name" : "stops video recording",
       "time" : {
-        "start" : 1542994358008,
-        "stop" : 1542994358009,
+        "start" : 1551415230263,
+        "stop" : 1551415230264,
         "duration" : 1
       },
       "status" : "passed",
@@ -48,25 +46,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "has globals",
+      "name" : "throws error if recording process was failed",
       "time" : {
-        "start" : 1542994358009,
-        "stop" : 1542994358009,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "has plugin help",
-      "time" : {
-        "start" : 1542994358009,
-        "stop" : 1542994358010,
+        "start" : 1551415230264,
+        "stop" : 1551415230265,
         "duration" : 1
       },
       "status" : "passed",
@@ -78,10 +61,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "has steps",
+      "name" : "throws error if recording process has failed exit code",
       "time" : {
-        "start" : 1542994358010,
-        "stop" : 1542994358010,
+        "start" : 1551415230265,
+        "stop" : 1551415230265,
         "duration" : 0
       },
       "status" : "passed",
@@ -95,7 +78,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 5,
+    "stepsCount" : 4,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -103,16 +86,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "import"
+    "value" : "Video"
   }, {
     "name" : "testClass",
-    "value" : "import"
+    "value" : "Video"
   }, {
     "name" : "testMethod",
-    "value" : "Plugin lazy import"
+    "value" : ".stop()"
   }, {
     "name" : "package",
-    "value" : "import"
+    "value" : "Video"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -120,18 +103,13 @@
   "parameters" : [ ],
   "links" : [ ],
   "hidden" : false,
+  "retry" : false,
   "extra" : {
     "severity" : "normal",
     "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "7077815386c9a71a.json",
-  "statusDetailsSafe" : {
-    "flaky" : false
-  },
-  "statusMessage" : {
-    "present" : false
-  },
+  "source" : "af5d14574690ca40.json",
   "parameterValues" : [ ]
 }
