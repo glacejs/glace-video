@@ -1,3 +1,7 @@
+### v1.2.3
+
+- Updated dependencies to fresh versions.
+
 ### v1.2.2
 
 - [Used](https://github.com/glacejs/glace-video/commit/2b30f170c3e3b56a3446f583f00d9233434d4d80) fixtures factory.
